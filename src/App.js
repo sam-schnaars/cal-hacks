@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Lesson from './components/Lesson';
+import Lesson from './components/Lesson.tsx';
 import Quiz from './components/Quiz';
 
 function App() {
