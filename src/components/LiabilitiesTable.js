@@ -1,8 +1,8 @@
 import React from 'react';
 import data from "../google_balance_sheet.json";
 
-const LiabilitiesTable = () => {
-  const dataa = data["Liabilities and Stockholders' Equity"];
+const LiabilitiesTable = (dataType) => {
+  const selectedData = data["Liabilities and Stockholders' Equity"];
 
   const renderRows = (subcategory, items) => {
     return Object.entries(items).map(([item, values]) => (
@@ -16,7 +16,7 @@ const LiabilitiesTable = () => {
 
   const generateTableRows = () => {
     const rows = [];
-    Object.entries(data["Liabilities and Stockholders' Equity"]).forEach(([subcategory, items]) => {
+    Object.entries(selectedData).forEach(([subcategory, items]) => {
       // Add subcategory row (Current liabilities, Non-current liabilities)
       rows.push(
         <tr key={subcategory} className='pl-2 pr-2'>
@@ -31,7 +31,7 @@ const LiabilitiesTable = () => {
 
   return (
     <div>
-      <h1 className='font-bold'>Liabilities</h1>
+      <h1 className='font-bold text-lg'>Liabilities</h1>
       <table className="border b-2 pl-2 pr-2">
         <thead className="border b-2 pl-4 pr-4">
           <tr className="border b-2">
