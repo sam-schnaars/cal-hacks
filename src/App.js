@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Lesson from './components/Lesson.tsx';
 import Quiz from './components/Quiz';
+import AssetsTable from './components/AssetsTable.js';
+import LiabilitiesTable from './components/LiabilitiesTable.js';
 
 
 
@@ -48,44 +50,10 @@ function App() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 flex flex-col justify-between">
+      <div className="flex-1">
         <main className="flex-1 flex flex-row p-6">
-          <table className="table-auto border border-gray-400">
-          <thead>
-            <tr>
-              <th className="border bg-slate-200 border-gray-300 px-4 py-2">Balance Sheet</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="">
-                <table className="">
-                  <thead>
-                    <th className="border bg-slate-100 border-gray-300 px-4 py-2">Current Assets</th>
-                    <th className="border bg-slate-100 border-gray-300 px-4 py-2">Current Liabilities</th>
-                  </thead>
-                  <tbody>
-                    <td className="border border-gray-300 px-4 py-2">25</td>
-                    <td className="border border-gray-300 px-4 py-2">USA</td>
-                  </tbody>
-                </table>
-                
-              </td>
-              <td className="border border-gray-300 px-4 py-2">25</td>
-              <td className="border border-gray-300 px-4 py-2">USA</td>
-            </tr>
-          </tbody>
-          </table>
-          <table className="">
-                  <thead>
-                    <th className="border bg-slate-100 border-gray-300 px-4 py-2">Current Assets</th>
-                    <th className="border bg-slate-100 border-gray-300 px-4 py-2">Current Liabilities</th>
-                  </thead>
-                  <tbody>
-                    <td className="border border-gray-300 px-4 py-2">25</td>
-                    <td className="border border-gray-300 px-4 py-2">USA</td>
-                  </tbody>
-                </table>
+          <AssetsTable/>
+          <LiabilitiesTable/>
         </main>
 
         {/* Bottom Right Buttons */}
