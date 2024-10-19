@@ -1,8 +1,8 @@
 import React from 'react';
 import data from "../google_balance_sheet.json";
 
-const LiabilitiesTable = () => {
-  const dataa = data["Liabilities and Stockholders' Equity"];
+const LiabilitiesTable = (dataType) => {
+  const selectedData = data["Liabilities and Stockholders' Equity"];
 
   const formatNumber = (num) => {
     if (num === undefined || num === null) return '-';
