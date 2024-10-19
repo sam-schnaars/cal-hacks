@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import data from "../questions.json";
+import data from "../google_questions.json";
 
-const Sidebar = () => {
+const Sidebar = ({setQuestion}) => {
   const questions = data.quiz.questions; // Use questions from the JSON
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -13,7 +13,7 @@ const Sidebar = () => {
   const handleOptionSelect = (optionId) => {
     setSelectedOption(optionId);
     setIsAnswered(true);
-
+    setQuestion(questions[currentQuestionIndex]);
     // Provide feedback on the selected answer
     if (optionId === questions[currentQuestionIndex].correctAnswer) {
       setFeedback('Correct answer!');
@@ -38,7 +38,16 @@ const Sidebar = () => {
     } else {
       alert('Please select the correct answer before proceeding.');
     }
+    setQuestion({"highlight":[""]});
   };
+
+  const setHighlight = () => {
+    return (
+        <div>
+
+        </div>
+    )
+  }
 
   // Function to handle moving to the previous question
   const handlePrevious = () => {
@@ -52,6 +61,7 @@ const Sidebar = () => {
       }
       return prevIndex; // No change if on the first question
     });
+    setQuestion({"highlight":[""]});
   };
 
   return (

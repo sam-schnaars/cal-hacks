@@ -2,10 +2,16 @@ import React from 'react';
 import incomeData from "../google_income_statement.json";
 import cashFlowData from "../google_cash_flow.json";
 
-const IncomeAndCashFlowTable = () => {
+const IncomeAndCashFlowTable = (question) => {
+  const highlights = question.question.highlight ? question.question.highlight.flat(2) : "Inventory";
+
   const formatNumber = (num) => {
     if (num === undefined || num === null) return '-';
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
+
+  const isHighlighted = (subcategory) => {
+    return highlights.includes(subcategory);
   };
 
   const renderRows = (items, depth = 0) => {

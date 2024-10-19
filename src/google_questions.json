@@ -13,7 +13,7 @@
                 ],
                 "correctAnswer": "c",
                 "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $282,474 million.",
-                "highlight": [["income_statement", "total_revenue"]]
+                "highlight": [["Inventory", "Total Assets"]]
             },
             {
                 "question_id": 2,
@@ -26,7 +26,7 @@
                 ],
                 "correctAnswer": "a",
                 "explanation": "Revenue growth rate = (2023 revenue - 2022 revenue) / 2022 revenue = (282,474 - 265,696) / 265,696 = 6%",
-                "highlight": [["income_statement", "total_revenue"]]
+                "highlight": [["Cash And Cash Equivalents"]]
             },
             {
                 "question_id": 3,
@@ -39,7 +39,7 @@
                 ],
                 "correctAnswer": "b",
                 "explanation": "Gross profit margin = (Total revenues - Cost of revenues) / Total revenues = (282,474 - 126,203) / 282,474 = 55%",
-                "highlight": [["income_statement", "total_revenue"], ["income_statement", "cost_of_revenues"]]
+                "highlight": [["Income Statement", "Total Revenue"], ["Income Statement", "Cost Of Revenues"]]
             },
             {
                 "question_id": 4,
@@ -52,7 +52,7 @@
                 ],
                 "correctAnswer": "a",
                 "explanation": "Google Services contributed $253,667 million, which is the largest segment revenue.",
-                "highlight": [["income_statement", "segment_information"]]
+                "highlight": [["Income Statement", "Segment Information"]]
             },
             {
                 "question_id": 5,
@@ -65,7 +65,7 @@
                 ],
                 "correctAnswer": "b",
                 "explanation": "The income statement shows operating income of $74,842 million for 2023.",
-                "highlight": [["income_statement", "operating_income"]]
+                "highlight": [["Income Statement", "Operating Income"]]
             },
             {
                 "question_id": 6,
@@ -78,7 +78,7 @@
                 ],
                 "correctAnswer": "c",
                 "explanation": "Effective tax rate = Provision for income taxes / Income before income taxes = 13,465 / 79,042 = 17%",
-                "highlight": [["income_statement", "provision_for_income_taxes"], ["income_statement", "income_before_income_taxes"]]
+                "highlight": [["Income Statement", "Provision For Income Taxes"], ["Income Statement", "Income Before Income Taxes"]]
             },
             {
                 "question_id": 7,
@@ -91,7 +91,7 @@
                 ],
                 "correctAnswer": "c",
                 "explanation": "The income statement shows basic EPS for Class A and B common stock as $5.31.",
-                "highlight": [["income_statement", "basic_earnings_per_share"]]
+                "highlight": [["Income Statement", "Basic Earnings Per Share"]]
             },
             {
                 "question_id": 8,
@@ -104,7 +104,7 @@
                 ],
                 "correctAnswer": "c",
                 "explanation": "The balance sheet shows cash and cash equivalents of $23,707 million.",
-                "highlight": [["balance_sheet", "assets", "current_assets", "cash_and_cash_equivalents"]]
+                "highlight": [["Balance Sheet", "Assets", "Current Assets", "Cash And Cash Equivalents"]]
             },
             {
                 "question_id": 9,
@@ -117,7 +117,7 @@
                 ],
                 "correctAnswer": "b",
                 "explanation": "The balance sheet shows total current assets of $164,795 million.",
-                "highlight": [["balance_sheet", "assets", "current_assets", "total_current_assets"]]
+                "highlight": [["Balance Sheet", "Assets", "Current Assets", "Total Current Assets"]]
             },
             {
                 "question_id": 10,
@@ -130,7 +130,7 @@
                 ],
                 "correctAnswer": "c",
                 "explanation": "The balance sheet shows long-term debt of $13,241 million.",
-                "highlight": [["balance_sheet", "liabilities", "long_term_liabilities", "long_term_debt"]]
+                "highlight": [["Balance Sheet", "Liabilities", "Long Term Liabilities", "Long Term Debt"]]
             },
             {
                 "question_id": 11,
@@ -143,7 +143,7 @@
                 ],
                 "correctAnswer": "c",
                 "explanation": "The balance sheet shows total stockholders' equity of $255,570 million.",
-                "highlight": [["balance_sheet", "stockholders_equity", "total_stockholders_equity"]]
+                "highlight": [["Balance Sheet", "Stockholders' Equity", "Total Stockholders' Equity"]]
             },
             {
                 "question_id": 12,
@@ -156,7 +156,7 @@
                 ],
                 "correctAnswer": "b",
                 "explanation": "The cash flow statement shows net cash provided by operating activities of $91,495 million.",
-                "highlight": [["cash_flow_statement", "operating_activities", "net_cash_provided_by_operating_activities"]]
+                "highlight": [["Cash Flow Statement", "Operating Activities", "Net Cash Provided By Operating Activities"]]
             },
             {
                 "question_id": 13,
@@ -168,114 +168,34 @@
                     {"id": "d", "text": "$32,303 million"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "The cash flow statement shows purchases of property and equipment of $30,597 million.",
-                "highlight": [["cash_flow_statement", "investing_activities", "purchases_of_property_and_equipment"]]
+                "explanation": "The cash flow statement shows purchases of property and equipment (capital expenditures) of $30,597 million.",
+                "highlight": [["Cash Flow Statement", "Investing Activities", "Purchases Of Property And Equipment"]]
             },
             {
                 "question_id": 14,
-                "text": "What was the total amount Alphabet spent on share repurchases in 2023?",
+                "text": "What was Alphabet's free cash flow in 2023?",
                 "options": [
-                    {"id": "a", "text": "$52,877 million"},
-                    {"id": "b", "text": "$58,073 million"},
-                    {"id": "c", "text": "$62,069 million"},
-                    {"id": "d", "text": "$67,654 million"}
+                    {"id": "a", "text": "$59,948 million"},
+                    {"id": "b", "text": "$60,898 million"},
+                    {"id": "c", "text": "$61,300 million"},
+                    {"id": "d", "text": "$61,755 million"}
                 ],
-                "correctAnswer": "c",
-                "explanation": "The cash flow statement shows repurchases of common and capital stock of $62,069 million.",
-                "highlight": [["cash_flow_statement", "financing_activities", "repurchases_of_common_and_capital_stock"]]
+                "correctAnswer": "d",
+                "explanation": "Free cash flow = Net cash provided by operating activities - Capital expenditures = 91,495 - 30,597 = $61,755 million.",
+                "highlight": [["Cash Flow Statement", "Operating Activities", "Net Cash Provided By Operating Activities"], ["Cash Flow Statement", "Investing Activities", "Purchases Of Property And Equipment"]]
             },
             {
                 "question_id": 15,
-                "text": "What was Alphabet's current ratio as of December 31, 2023?",
+                "text": "What was Alphabet's total comprehensive income for 2023?",
                 "options": [
-                    {"id": "a", "text": "1.5"},
-                    {"id": "b", "text": "2.0"},
-                    {"id": "c", "text": "2.5"},
-                    {"id": "d", "text": "3.0"}
-                ],
-                "correctAnswer": "b",
-                "explanation": "Current ratio = Current assets / Current liabilities = 164,795 / 82,389 = 2.0",
-                "highlight": [
-                    ["balance_sheet", "assets", "current_assets", "total_current_assets"],
-                    ["balance_sheet", "liabilities", "current_liabilities", "total_current_liabilities"]
-                ]
-            },
-            {
-                "question_id": 16,
-                "text": "What was Alphabet's debt-to-equity ratio as of December 31, 2023?",
-                "options": [
-                    {"id": "a", "text": "0.05"},
-                    {"id": "b", "text": "0.10"},
-                    {"id": "c", "text": "0.15"},
-                    {"id": "d", "text": "0.20"}
-                ],
-                "correctAnswer": "a",
-                "explanation": "Debt-to-equity ratio = Total long-term debt / Total stockholders' equity = 13,241 / 255,570 = 0.05",
-                "highlight": [
-                    ["balance_sheet", "liabilities", "long_term_liabilities", "long_term_debt"],
-                    ["balance_sheet", "stockholders_equity", "total_stockholders_equity"]
-                ]
-            },
-            {
-                "question_id": 17,
-                "text": "What was Alphabet's return on equity (ROE) for 2023?",
-                "options": [
-                    {"id": "a", "text": "20%"},
-                    {"id": "b", "text": "22%"},
-                    {"id": "c", "text": "24%"},
-                    {"id": "d", "text": "26%"}
+                    {"id": "a", "text": "$59,243 million"},
+                    {"id": "b", "text": "$61,340 million"},
+                    {"id": "c", "text": "$62,771 million"},
+                    {"id": "d", "text": "$64,012 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "ROE = Net income / Average stockholders' equity = 59,972 / ((255,570 + 251,836) / 2) = 24%",
-                "highlight": [
-                    ["income_statement", "net_income"],
-                    ["balance_sheet", "stockholders_equity", "total_stockholders_equity"]
-                ]
-            },
-            {
-                "question_id": 18,
-                "text": "What percentage of Alphabet's total revenue came from Google Cloud in 2023?",
-                "options": [
-                    {"id": "a", "text": "8%"},
-                    {"id": "b", "text": "10%"},
-                    {"id": "c", "text": "12%"},
-                    {"id": "d", "text": "14%"}
-                ],
-                "correctAnswer": "b",
-                "explanation": "Google Cloud revenue / Total revenue = 29,502 / 282,474 = 10%",
-                "highlight": [
-                    ["income_statement", "segment_information", "google_cloud"],
-                    ["income_statement", "total_revenue"]
-                ]
-            },
-            {
-                "question_id": 19,
-                "text": "What was Alphabet's asset turnover ratio for 2023?",
-                "options": [
-                    {"id": "a", "text": "0.7"},
-                    {"id": "b", "text": "0.8"},
-                    {"id": "c", "text": "0.9"},
-                    {"id": "d", "text": "1.0"}
-                ],
-                "correctAnswer": "b",
-                "explanation": "Asset turnover ratio = Total revenues / Average total assets = 282,474 / ((359,268 + 365,241) / 2) = 0.8",
-                "highlight": [
-                    ["income_statement", "total_revenue"],
-                    ["balance_sheet", "assets", "total_assets"]
-                ]
-            },
-            {
-                "question_id": 20,
-                "text": "What was the year-over-year growth rate of Alphabet's research and development expenses from 2022 to 2023?",
-                "options": [
-                    {"id": "a", "text": "8%"},
-                    {"id": "b", "text": "10%"},
-                    {"id": "c", "text": "12%"},
-                    {"id": "d", "text": "14%"}
-                ],
-                "correctAnswer": "c",
-                "explanation": "R&D expense growth rate = (2023 R&D - 2022 R&D) / 2022 R&D = (44,696 - 39,950) / 39,950 = 12%",
-                "highlight": [["income_statement", "operating_expenses", "research_and_development"]]
+                "explanation": "The statement of comprehensive income shows total comprehensive income of $62,771 million.",
+                "highlight": [["Income Statement", "Comprehensive Income", "Total Comprehensive Income"]]
             }
         ]
     }
