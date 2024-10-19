@@ -12,7 +12,8 @@
                     {"id": "d", "text": "$283,836 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $282,474 million."
+                "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $282,474 million.",
+                "highlight": [["income_statement", "total_revenue"]]
             },
             {
                 "question_id": 2,
@@ -24,7 +25,8 @@
                     {"id": "d", "text": "12%"}
                 ],
                 "correctAnswer": "a",
-                "explanation": "Revenue growth rate = (2023 revenue - 2022 revenue) / 2022 revenue = (282,474 - 265,696) / 265,696 = 6%"
+                "explanation": "Revenue growth rate = (2023 revenue - 2022 revenue) / 2022 revenue = (282,474 - 265,696) / 265,696 = 6%",
+                "highlight": [["income_statement", "total_revenue"]]
             },
             {
                 "question_id": 3,
@@ -36,7 +38,8 @@
                     {"id": "d", "text": "57%"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "Gross profit margin = (Total revenues - Cost of revenues) / Total revenues = (282,474 - 126,203) / 282,474 = 55%"
+                "explanation": "Gross profit margin = (Total revenues - Cost of revenues) / Total revenues = (282,474 - 126,203) / 282,474 = 55%",
+                "highlight": [["income_statement", "total_revenue"], ["income_statement", "cost_of_revenues"]]
             },
             {
                 "question_id": 4,
@@ -48,7 +51,8 @@
                     {"id": "d", "text": "Hedging gains"}
                 ],
                 "correctAnswer": "a",
-                "explanation": "Google Services contributed $253,667 million, which is the largest segment revenue."
+                "explanation": "Google Services contributed $253,667 million, which is the largest segment revenue.",
+                "highlight": [["income_statement", "segment_information"]]
             },
             {
                 "question_id": 5,
@@ -60,7 +64,8 @@
                     {"id": "d", "text": "$86,068 million"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "The income statement shows operating income of $74,842 million for 2023."
+                "explanation": "The income statement shows operating income of $74,842 million for 2023.",
+                "highlight": [["income_statement", "operating_income"]]
             },
             {
                 "question_id": 6,
@@ -72,7 +77,8 @@
                     {"id": "d", "text": "19%"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "Effective tax rate = Provision for income taxes / Income before income taxes = 13,465 / 79,042 = 17%"
+                "explanation": "Effective tax rate = Provision for income taxes / Income before income taxes = 13,465 / 79,042 = 17%",
+                "highlight": [["income_statement", "provision_for_income_taxes"], ["income_statement", "income_before_income_taxes"]]
             },
             {
                 "question_id": 7,
@@ -84,7 +90,8 @@
                     {"id": "d", "text": "$5.91"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "The income statement shows basic EPS for Class A and B common stock as $5.31."
+                "explanation": "The income statement shows basic EPS for Class A and B common stock as $5.31.",
+                "highlight": [["income_statement", "basic_earnings_per_share"]]
             },
             {
                 "question_id": 8,
@@ -96,7 +103,8 @@
                     {"id": "d", "text": "$24,911 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "The balance sheet shows cash and cash equivalents of $23,707 million."
+                "explanation": "The balance sheet shows cash and cash equivalents of $23,707 million.",
+                "highlight": [["balance_sheet", "assets", "current_assets", "cash_and_cash_equivalents"]]
             },
             {
                 "question_id": 9,
@@ -108,7 +116,8 @@
                     {"id": "d", "text": "$166,245 million"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "The balance sheet shows total current assets of $164,795 million."
+                "explanation": "The balance sheet shows total current assets of $164,795 million.",
+                "highlight": [["balance_sheet", "assets", "current_assets", "total_current_assets"]]
             },
             {
                 "question_id": 10,
@@ -120,7 +129,8 @@
                     {"id": "d", "text": "$14,701 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "The balance sheet shows long-term debt of $13,241 million."
+                "explanation": "The balance sheet shows long-term debt of $13,241 million.",
+                "highlight": [["balance_sheet", "liabilities", "long_term_liabilities", "long_term_debt"]]
             },
             {
                 "question_id": 11,
@@ -132,7 +142,8 @@
                     {"id": "d", "text": "$257,134 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "The balance sheet shows total stockholders' equity of $255,570 million."
+                "explanation": "The balance sheet shows total stockholders' equity of $255,570 million.",
+                "highlight": [["balance_sheet", "stockholders_equity", "total_stockholders_equity"]]
             },
             {
                 "question_id": 12,
@@ -144,7 +155,8 @@
                     {"id": "d", "text": "$98,490 million"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "The cash flow statement shows net cash provided by operating activities of $91,495 million."
+                "explanation": "The cash flow statement shows net cash provided by operating activities of $91,495 million.",
+                "highlight": [["cash_flow_statement", "operating_activities", "net_cash_provided_by_operating_activities"]]
             },
             {
                 "question_id": 13,
@@ -156,7 +168,8 @@
                     {"id": "d", "text": "$32,303 million"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "The cash flow statement shows purchases of property and equipment of $30,597 million."
+                "explanation": "The cash flow statement shows purchases of property and equipment of $30,597 million.",
+                "highlight": [["cash_flow_statement", "investing_activities", "purchases_of_property_and_equipment"]]
             },
             {
                 "question_id": 14,
@@ -168,7 +181,8 @@
                     {"id": "d", "text": "$67,654 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "The cash flow statement shows repurchases of common and capital stock of $62,069 million."
+                "explanation": "The cash flow statement shows repurchases of common and capital stock of $62,069 million.",
+                "highlight": [["cash_flow_statement", "financing_activities", "repurchases_of_common_and_capital_stock"]]
             },
             {
                 "question_id": 15,
@@ -180,7 +194,11 @@
                     {"id": "d", "text": "3.0"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "Current ratio = Current assets / Current liabilities = 164,795 / 82,389 = 2.0"
+                "explanation": "Current ratio = Current assets / Current liabilities = 164,795 / 82,389 = 2.0",
+                "highlight": [
+                    ["balance_sheet", "assets", "current_assets", "total_current_assets"],
+                    ["balance_sheet", "liabilities", "current_liabilities", "total_current_liabilities"]
+                ]
             },
             {
                 "question_id": 16,
@@ -192,7 +210,11 @@
                     {"id": "d", "text": "0.20"}
                 ],
                 "correctAnswer": "a",
-                "explanation": "Debt-to-equity ratio = Total long-term debt / Total stockholders' equity = 13,241 / 255,570 = 0.05"
+                "explanation": "Debt-to-equity ratio = Total long-term debt / Total stockholders' equity = 13,241 / 255,570 = 0.05",
+                "highlight": [
+                    ["balance_sheet", "liabilities", "long_term_liabilities", "long_term_debt"],
+                    ["balance_sheet", "stockholders_equity", "total_stockholders_equity"]
+                ]
             },
             {
                 "question_id": 17,
@@ -204,7 +226,11 @@
                     {"id": "d", "text": "26%"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "ROE = Net income / Average stockholders' equity = 59,972 / ((255,570 + 251,836) / 2) = 24%"
+                "explanation": "ROE = Net income / Average stockholders' equity = 59,972 / ((255,570 + 251,836) / 2) = 24%",
+                "highlight": [
+                    ["income_statement", "net_income"],
+                    ["balance_sheet", "stockholders_equity", "total_stockholders_equity"]
+                ]
             },
             {
                 "question_id": 18,
@@ -216,7 +242,11 @@
                     {"id": "d", "text": "14%"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "Google Cloud revenue / Total revenue = 29,502 / 282,474 = 10%"
+                "explanation": "Google Cloud revenue / Total revenue = 29,502 / 282,474 = 10%",
+                "highlight": [
+                    ["income_statement", "segment_information", "google_cloud"],
+                    ["income_statement", "total_revenue"]
+                ]
             },
             {
                 "question_id": 19,
@@ -228,7 +258,11 @@
                     {"id": "d", "text": "1.0"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "Asset turnover ratio = Total revenues / Average total assets = 282,474 / ((359,268 + 365,241) / 2) = 0.8"
+                "explanation": "Asset turnover ratio = Total revenues / Average total assets = 282,474 / ((359,268 + 365,241) / 2) = 0.8",
+                "highlight": [
+                    ["income_statement", "total_revenue"],
+                    ["balance_sheet", "assets", "total_assets"]
+                ]
             },
             {
                 "question_id": 20,
@@ -240,7 +274,8 @@
                     {"id": "d", "text": "14%"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "R&D expense growth rate = (2023 R&D - 2022 R&D) / 2022 R&D = (44,696 - 39,950) / 39,950 = 12%"
+                "explanation": "R&D expense growth rate = (2023 R&D - 2022 R&D) / 2022 R&D = (44,696 - 39,950) / 39,950 = 12%",
+                "highlight": [["income_statement", "operating_expenses", "research_and_development"]]
             }
         ]
     }
