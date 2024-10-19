@@ -1,0 +1,247 @@
+{
+    "quiz": {
+        "title": "Accounting Quiz: Alphabet Inc. Financial Statement Analysis",
+        "questions": [
+            {
+                "question_id": 1,
+                "text": "What was Alphabet's total revenue for the year ended December 31, 2023?",
+                "options": [
+                    {"id": "a", "text": "$282,836 million"},
+                    {"id": "b", "text": "$283,474 million"},
+                    {"id": "c", "text": "$282,474 million"},
+                    {"id": "d", "text": "$283,836 million"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $282,474 million."
+            },
+            {
+                "question_id": 2,
+                "text": "What was the year-over-year revenue growth rate from 2022 to 2023?",
+                "options": [
+                    {"id": "a", "text": "6%"},
+                    {"id": "b", "text": "9%"},
+                    {"id": "c", "text": "10%"},
+                    {"id": "d", "text": "12%"}
+                ],
+                "correctAnswer": "a",
+                "explanation": "Revenue growth rate = (2023 revenue - 2022 revenue) / 2022 revenue = (282,474 - 265,696) / 265,696 = 6%"
+            },
+            {
+                "question_id": 3,
+                "text": "What was Alphabet's gross profit margin for 2023?",
+                "options": [
+                    {"id": "a", "text": "54%"},
+                    {"id": "b", "text": "55%"},
+                    {"id": "c", "text": "56%"},
+                    {"id": "d", "text": "57%"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "Gross profit margin = (Total revenues - Cost of revenues) / Total revenues = (282,474 - 126,203) / 282,474 = 55%"
+            },
+            {
+                "question_id": 4,
+                "text": "Which segment contributed the most to Alphabet's revenue in 2023?",
+                "options": [
+                    {"id": "a", "text": "Google Services"},
+                    {"id": "b", "text": "Google Cloud"},
+                    {"id": "c", "text": "Other Bets"},
+                    {"id": "d", "text": "Hedging gains"}
+                ],
+                "correctAnswer": "a",
+                "explanation": "Google Services contributed $253,667 million, which is the largest segment revenue."
+            },
+            {
+                "question_id": 5,
+                "text": "What was Alphabet's operating income for 2023?",
+                "options": [
+                    {"id": "a", "text": "$62,530 million"},
+                    {"id": "b", "text": "$74,842 million"},
+                    {"id": "c", "text": "$84,272 million"},
+                    {"id": "d", "text": "$86,068 million"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "The income statement shows operating income of $74,842 million for 2023."
+            },
+            {
+                "question_id": 6,
+                "text": "What was Alphabet's effective tax rate for 2023?",
+                "options": [
+                    {"id": "a", "text": "13%"},
+                    {"id": "b", "text": "15%"},
+                    {"id": "c", "text": "17%"},
+                    {"id": "d", "text": "19%"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "Effective tax rate = Provision for income taxes / Income before income taxes = 13,465 / 79,042 = 17%"
+            },
+            {
+                "question_id": 7,
+                "text": "What was Alphabet's basic earnings per share for Class A and B common stock in 2023?",
+                "options": [
+                    {"id": "a", "text": "$5.11"},
+                    {"id": "b", "text": "$5.80"},
+                    {"id": "c", "text": "$5.31"},
+                    {"id": "d", "text": "$5.91"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "The income statement shows basic EPS for Class A and B common stock as $5.31."
+            },
+            {
+                "question_id": 8,
+                "text": "What was the total amount of cash and cash equivalents on Alphabet's balance sheet as of December 31, 2023?",
+                "options": [
+                    {"id": "a", "text": "$21,879 million"},
+                    {"id": "b", "text": "$22,583 million"},
+                    {"id": "c", "text": "$23,707 million"},
+                    {"id": "d", "text": "$24,911 million"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "The balance sheet shows cash and cash equivalents of $23,707 million."
+            },
+            {
+                "question_id": 9,
+                "text": "What was Alphabet's total current assets as of December 31, 2023?",
+                "options": [
+                    {"id": "a", "text": "$163,326 million"},
+                    {"id": "b", "text": "$164,795 million"},
+                    {"id": "c", "text": "$165,750 million"},
+                    {"id": "d", "text": "$166,245 million"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "The balance sheet shows total current assets of $164,795 million."
+            },
+            {
+                "question_id": 10,
+                "text": "What was Alphabet's total long-term debt as of December 31, 2023?",
+                "options": [
+                    {"id": "a", "text": "$9,654 million"},
+                    {"id": "b", "text": "$11,417 million"},
+                    {"id": "c", "text": "$13,241 million"},
+                    {"id": "d", "text": "$14,701 million"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "The balance sheet shows long-term debt of $13,241 million."
+            },
+            {
+                "question_id": 11,
+                "text": "What was Alphabet's total stockholders' equity as of December 31, 2023?",
+                "options": [
+                    {"id": "a", "text": "$251,836 million"},
+                    {"id": "b", "text": "$253,403 million"},
+                    {"id": "c", "text": "$255,570 million"},
+                    {"id": "d", "text": "$257,134 million"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "The balance sheet shows total stockholders' equity of $255,570 million."
+            },
+            {
+                "question_id": 12,
+                "text": "What was Alphabet's net cash provided by operating activities in 2023?",
+                "options": [
+                    {"id": "a", "text": "$84,372 million"},
+                    {"id": "b", "text": "$91,495 million"},
+                    {"id": "c", "text": "$96,883 million"},
+                    {"id": "d", "text": "$98,490 million"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "The cash flow statement shows net cash provided by operating activities of $91,495 million."
+            },
+            {
+                "question_id": 13,
+                "text": "How much did Alphabet spend on capital expenditures in 2023?",
+                "options": [
+                    {"id": "a", "text": "$29,240 million"},
+                    {"id": "b", "text": "$30,597 million"},
+                    {"id": "c", "text": "$31,485 million"},
+                    {"id": "d", "text": "$32,303 million"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "The cash flow statement shows purchases of property and equipment of $30,597 million."
+            },
+            {
+                "question_id": 14,
+                "text": "What was the total amount Alphabet spent on share repurchases in 2023?",
+                "options": [
+                    {"id": "a", "text": "$52,877 million"},
+                    {"id": "b", "text": "$58,073 million"},
+                    {"id": "c", "text": "$62,069 million"},
+                    {"id": "d", "text": "$67,654 million"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "The cash flow statement shows repurchases of common and capital stock of $62,069 million."
+            },
+            {
+                "question_id": 15,
+                "text": "What was Alphabet's current ratio as of December 31, 2023?",
+                "options": [
+                    {"id": "a", "text": "1.5"},
+                    {"id": "b", "text": "2.0"},
+                    {"id": "c", "text": "2.5"},
+                    {"id": "d", "text": "3.0"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "Current ratio = Current assets / Current liabilities = 164,795 / 82,389 = 2.0"
+            },
+            {
+                "question_id": 16,
+                "text": "What was Alphabet's debt-to-equity ratio as of December 31, 2023?",
+                "options": [
+                    {"id": "a", "text": "0.05"},
+                    {"id": "b", "text": "0.10"},
+                    {"id": "c", "text": "0.15"},
+                    {"id": "d", "text": "0.20"}
+                ],
+                "correctAnswer": "a",
+                "explanation": "Debt-to-equity ratio = Total long-term debt / Total stockholders' equity = 13,241 / 255,570 = 0.05"
+            },
+            {
+                "question_id": 17,
+                "text": "What was Alphabet's return on equity (ROE) for 2023?",
+                "options": [
+                    {"id": "a", "text": "20%"},
+                    {"id": "b", "text": "22%"},
+                    {"id": "c", "text": "24%"},
+                    {"id": "d", "text": "26%"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "ROE = Net income / Average stockholders' equity = 59,972 / ((255,570 + 251,836) / 2) = 24%"
+            },
+            {
+                "question_id": 18,
+                "text": "What percentage of Alphabet's total revenue came from Google Cloud in 2023?",
+                "options": [
+                    {"id": "a", "text": "8%"},
+                    {"id": "b", "text": "10%"},
+                    {"id": "c", "text": "12%"},
+                    {"id": "d", "text": "14%"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "Google Cloud revenue / Total revenue = 29,502 / 282,474 = 10%"
+            },
+            {
+                "question_id": 19,
+                "text": "What was Alphabet's asset turnover ratio for 2023?",
+                "options": [
+                    {"id": "a", "text": "0.7"},
+                    {"id": "b", "text": "0.8"},
+                    {"id": "c", "text": "0.9"},
+                    {"id": "d", "text": "1.0"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "Asset turnover ratio = Total revenues / Average total assets = 282,474 / ((359,268 + 365,241) / 2) = 0.8"
+            },
+            {
+                "question_id": 20,
+                "text": "What was the year-over-year growth rate of Alphabet's research and development expenses from 2022 to 2023?",
+                "options": [
+                    {"id": "a", "text": "8%"},
+                    {"id": "b", "text": "10%"},
+                    {"id": "c", "text": "12%"},
+                    {"id": "d", "text": "14%"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "R&D expense growth rate = (2023 R&D - 2022 R&D) / 2022 R&D = (44,696 - 39,950) / 39,950 = 12%"
+            }
+        ]
+    }
+}
