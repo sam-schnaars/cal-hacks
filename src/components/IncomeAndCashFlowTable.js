@@ -1,5 +1,6 @@
 import React from 'react';
-import data from "../google_income_and_cash_flow_statements.json";
+import incomeData from "../google_income_statement.json";
+import cashFlowData from "../google_cash_flow.json";
 
 const IncomeAndCashFlowTable = () => {
   const formatNumber = (num) => {
@@ -13,17 +14,18 @@ const IncomeAndCashFlowTable = () => {
         return (
           <React.Fragment key={item}>
             <tr>
-              <td colSpan="3" className={`border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-${100 + depth * 100}`} style={{paddingLeft: `${depth * 20}px`}}>{item}</td>
+              <td colSpan="3" className={`border border-gray-400 px-2 py-1 text-xs font-semibold`} style={{paddingLeft: `${5 + depth * 20}px`}}>{item}</td>
             </tr>
             {renderRows(values, depth + 1)}
           </React.Fragment>
         );
       } else {
+        const isBold = item === 'Net Income' || item.toLowerCase().startsWith('net cash') || item === 'Cash and Cash Equivalents at End of Period';
         return (
           <tr key={item}>
-            <td className="border border-gray-400 px-2 py-1 text-xs" style={{paddingLeft: `${depth * 20}px`}}>{item}</td>
-            <td className="border border-gray-400 px-2 py-1 text-xs text-right">{typeof values['2022'] === 'number' ? '$' : ''}{formatNumber(values['2022'])}</td>
-            <td className="border border-gray-400 px-2 py-1 text-xs text-right">{typeof values['2023'] === 'number' ? '$' : ''}{formatNumber(values['2023'])}</td>
+            <td className={`border border-gray-400 px-2 py-1 text-xs ${isBold ? 'font-bold' : ''}`} style={{paddingLeft: `${5 + depth * 20}px`}}>{item}</td>
+            <td className={`border border-gray-400 px-2 py-1 text-xs text-right ${isBold ? 'font-bold' : ''}`} style={{paddingLeft: '5px'}}>{typeof values['2022'] === 'number' ? '$' : ''}{formatNumber(values['2022'])}</td>
+            <td className={`border border-gray-400 px-2 py-1 text-xs text-right ${isBold ? 'font-bold' : ''}`} style={{paddingLeft: '5px'}}>{typeof values['2023'] === 'number' ? '$' : ''}{formatNumber(values['2023'])}</td>
           </tr>
         );
       }
@@ -32,17 +34,29 @@ const IncomeAndCashFlowTable = () => {
 
   return (
     <div>
-      <h2 className='font-bold text-base mb-2'>Income Statement and Cash Flow Statement</h2>
-      <table className="border-collapse w-full">
+      <table className="border-collapse w-full mb-8">
         <thead>
           <tr>
-            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200">Income Statement</th>
-            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200">2022</th>
-            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200">2023</th>
+            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>Income Statement</th>
+            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>2022</th>
+            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>2023</th>
           </tr>
         </thead>
         <tbody>
-          {renderRows(data)}
+          {renderRows(incomeData)}
+        </tbody>
+      </table>
+
+      <table className="border-collapse w-full">
+        <thead>
+          <tr>
+            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>Cash Flow Statement</th>
+            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>2022</th>
+            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>2023</th>
+          </tr>
+        </thead>
+        <tbody>
+          {renderRows(cashFlowData)}
         </tbody>
       </table>
     </div>
