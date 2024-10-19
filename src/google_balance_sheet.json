@@ -1,0 +1,161 @@
+{
+    "Assets": {
+      "Current assets": {
+        "Cash and cash equivalents": {
+          "2022": 21879,
+          "2023": 29045
+        },
+        "Marketable securities": {
+          "2022": 93997,
+          "2023": 91789
+        },
+        "Total cash, cash equivalents, and marketable securities": {
+          "2022": 115876,
+          "2023": 120834
+        },
+        "Accounts receivable, net": {
+          "2022": 40258,
+          "2023": 44029
+        },
+        "Inventory": {
+          "2022": 2670,
+          "2023": 2470
+        },
+        "Other current assets": {
+          "2022": 10959,
+          "2023": 11499
+        },
+        "Total current assets": {
+          "2022": 169763,
+          "2023": 178832
+        }
+      },
+      "Non-current assets": {
+        "Property and equipment, net": {
+          "2022": 111262,
+          "2023": 126412
+        },
+        "Operating lease assets": {
+          "2022": 12478,
+          "2023": 12804
+        },
+        "Intangible assets, net": {
+          "2022": 2882,
+          "2023": 3729
+        },
+        "Goodwill": {
+          "2022": 28960,
+          "2023": 32760
+        },
+        "Non-marketable securities": {
+          "2022": 29916,
+          "2023": 31894
+        },
+        "Deferred income taxes": {
+          "2022": 1891,
+          "2023": 2256
+        },
+        "Other non-current assets": {
+          "2022": 5410,
+          "2023": 6181
+        },
+        "Total non-current assets": {
+          "2022": 192799,
+          "2023": 216036
+        }
+      },
+      "Total assets": {
+        "2022": 362562,
+        "2023": 394868
+      }
+    },
+    "Liabilities and Stockholders' Equity": {
+      "Current liabilities": {
+        "Accounts payable": {
+          "2022": 5128,
+          "2023": 5818
+        },
+        "Accrued compensation and benefits": {
+          "2022": 13775,
+          "2023": 15008
+        },
+        "Accrued expenses and other current liabilities": {
+          "2022": 36626,
+          "2023": 40159
+        },
+        "Accrued revenue share": {
+          "2022": 8155,
+          "2023": 8638
+        },
+        "Deferred revenue": {
+          "2022": 3288,
+          "2023": 3982
+        },
+        "Total current liabilities": {
+          "2022": 66972,
+          "2023": 73605
+        }
+      },
+      "Non-current liabilities": {
+        "Long-term debt": {
+          "2022": 14701,
+          "2023": 14700
+        },
+        "Deferred revenue, non-current": {
+          "2022": 535,
+          "2023": 622
+        },
+        "Income taxes payable, non-current": {
+          "2022": 9702,
+          "2023": 8699
+        },
+        "Deferred income taxes": {
+          "2022": 4619,
+          "2023": 3830
+        },
+        "Operating lease liabilities": {
+          "2022": 10663,
+          "2023": 11128
+        },
+        "Other long-term liabilities": {
+          "2022": 2146,
+          "2023": 2957
+        },
+        "Total non-current liabilities": {
+          "2022": 42366,
+          "2023": 41936
+        }
+      },
+      "Total liabilities": {
+        "2022": 109338,
+        "2023": 115541
+      },
+      "Commitments and contingencies": {},
+      "Stockholders' equity": {
+        "Preferred stock": {
+          "2022": 0,
+          "2023": 0
+        },
+        "Class A and Class B common stock, Class C capital stock and additional paid-in capital": {
+          "2022": 67829,
+          "2023": 70830
+        },
+        "Accumulated other comprehensive income (loss)": {
+          "2022": -3858,
+          "2023": -2971
+        },
+        "Retained earnings": {
+          "2022": 189253,
+          "2023": 211468
+        },
+        "Total stockholders' equity": {
+          "2022": 253224,
+          "2023": 279327
+        }
+      },
+      "Total liabilities and stockholders' equity": {
+        "2022": 362562,
+        "2023": 394868
+      }
+    }
+  }
