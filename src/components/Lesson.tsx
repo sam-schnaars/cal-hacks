@@ -5,20 +5,13 @@ export default function Component() {
     <div className="flex h-screen bg-background text-foreground">
       {/* Sidebar */}
       <div className="w-64 border-r bg-muted">
-        <div className="p-4 font-semibold text-lg border-b">Accounting Basics</div>
+        <div className="p-4 font-semibold text-lg border-b">Question</div>
         <div className="h-[calc(100vh-57px)]">
           <nav className="p-2">
             {[
               "Introduction to Accounting",
               "The Accounting Equation",
               "Financial Statements",
-              "Double-Entry Bookkeeping",
-              "Chart of Accounts",
-              "Journal Entries",
-              "Trial Balance",
-              "Adjusting Entries",
-              "Financial Statement Preparation",
-              "Closing the Books",
             ].map((item, index) => (
               <div
                 key={index}
