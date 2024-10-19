@@ -1,0 +1,58 @@
+{
+  "Income Statement": {
+    "Revenues": {
+      "2022": 282836,
+      "2023": 307394
+    },
+    "Costs and Expenses": {
+      "Cost of Revenues": {
+        "2022": 126203,
+        "2023": 133332
+      },
+      "Research and Development": {
+        "2022": 39500,
+        "2023": 45427
+      },
+      "Sales and Marketing": {
+        "2022": 26567,
+        "2023": 27917
+      },
+      "General and Administrative": {
+        "2022": 15724,
+        "2023": 16425
+      },
+      "Total Costs and Expenses": {
+        "2022": 207994,
+        "2023": 223101
+      }
+    },
+    "Income from Operations": {
+      "2022": 74842,
+      "2023": 84293
+    },
+    "Other Income (Expense), Net": {
+      "2022": -3514,
+      "2023": 1424
+    },
+    "Income Before Income Taxes": {
+      "2022": 71328,
+      "2023": 85717
+    },
+    "Provision for Income Taxes": {
+      "2022": 11356,
+      "2023": 11922
+    },
+    "Net Income": {
+      "2022": 59972,
+      "2023": 73795
+    },
+    "Basic Net Income per Share": {
+      "2022": 4.59,
+      "2023": 5.84
+    },
+    "Diluted Net Income per Share": {
+      "2022": 4.56,
+      "2023": 5.80
+    }
+  }
+}
