@@ -49,33 +49,43 @@ function App() {
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col justify-between">
-        <main className="flex-1 flex flex-col justify-between p-6">
+        <main className="flex-1 flex flex-row p-6">
           <table className="table-auto border border-gray-400">
           <thead>
             <tr>
               <th className="border bg-slate-200 border-gray-300 px-4 py-2">Balance Sheet</th>
-              <th className="border bg-slate-200 border-gray-300 px-4 py-2">Income Statement</th>
-              <th className="border bg-slate-200 border-gray-300 px-4 py-2">Country</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td className="">
-                <thead className='w-full'>
-                  <th className="border bg-slate-200 border-gray-300 px-4 py-2">Current Assets</th>
-                  <th className="border bg-slate-200 border-gray-300 px-4 py-2">Current Liabilities</th>
-                </thead>  
+                <table className="">
+                  <thead>
+                    <th className="border bg-slate-100 border-gray-300 px-4 py-2">Current Assets</th>
+                    <th className="border bg-slate-100 border-gray-300 px-4 py-2">Current Liabilities</th>
+                  </thead>
+                  <tbody>
+                    <td className="border border-gray-300 px-4 py-2">25</td>
+                    <td className="border border-gray-300 px-4 py-2">USA</td>
+                  </tbody>
+                </table>
+                
               </td>
               <td className="border border-gray-300 px-4 py-2">25</td>
               <td className="border border-gray-300 px-4 py-2">USA</td>
             </tr>
-            <tr>
-              <td className="border border-gray-300 px-4 py-2">Bob</td>
-              <td className="border border-gray-300 px-4 py-2">30</td>
-              <td className="border border-gray-300 px-4 py-2">UK</td>
-            </tr>
           </tbody>
           </table>
+          <table className="">
+                  <thead>
+                    <th className="border bg-slate-100 border-gray-300 px-4 py-2">Current Assets</th>
+                    <th className="border bg-slate-100 border-gray-300 px-4 py-2">Current Liabilities</th>
+                  </thead>
+                  <tbody>
+                    <td className="border border-gray-300 px-4 py-2">25</td>
+                    <td className="border border-gray-300 px-4 py-2">USA</td>
+                  </tbody>
+                </table>
         </main>
 
         {/* Bottom Right Buttons */}
