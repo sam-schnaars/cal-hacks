@@ -4,6 +4,7 @@ import Lesson from './components/Lesson.tsx';
 import Quiz from './components/Quiz';
 import AssetsTable from './components/AssetsTable.js';
 import LiabilitiesTable from './components/LiabilitiesTable.js';
+import IncomeAndCashFlowTable from './components/IncomeAndCashFlowTable.js';
 
 
 
@@ -50,14 +51,17 @@ function App() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1">
-        <main className="flex-1 flex flex-row p-6">
-          <AssetsTable/>
-          <LiabilitiesTable/>
+      <div className="flex-1 flex flex-col">
+        <main className="flex-1 p-6 overflow-auto">
+          <div className="flex flex-row space-x-4">
+            <div className="flex-1"><AssetsTable/></div>
+            <div className="flex-1"><LiabilitiesTable/></div>
+            <div className="flex-1"><IncomeAndCashFlowTable/></div>
+          </div>
         </main>
 
         {/* Bottom Right Buttons */}
-        <div className="p-4 flex justify-end gap-4">˜
+        <div className="p-4 flex justify-end gap-4">
           <Link to="/quiz">IDK</Link>
           <Link to="/next">Next</Link>
         </div>
@@ -70,3 +74,4 @@ function App() {
 
 
 export default App;
+
