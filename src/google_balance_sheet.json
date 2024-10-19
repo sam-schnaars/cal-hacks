@@ -62,11 +62,11 @@
         "Total non-current assets": {
           "2022": 192799,
           "2023": 216036
+        },
+        "Total assets": {
+          "2022": 362562,
+          "2023": 394868
         }
-      },
-      "Total assets": {
-        "2022": 362562,
-        "2023": 394868
       }
     },
     "Liabilities and Stockholders' Equity": {
@@ -124,13 +124,12 @@
         "Total non-current liabilities": {
           "2022": 42366,
           "2023": 41936
+        },
+        "Total liabilities": {
+          "2022": 109338,
+          "2023": 115541
         }
       },
-      "Total liabilities": {
-        "2022": 109338,
-        "2023": 115541
-      },
-      "Commitments and contingencies": {},
       "Stockholders' equity": {
         "Preferred stock": {
           "2022": 0,
@@ -151,11 +150,11 @@
         "Total stockholders' equity": {
           "2022": 253224,
           "2023": 279327
+        },
+        "Total liabilities and stockholders' equity": {
+          "2022": 362562,
+          "2023": 394868
         }
-      },
-      "Total liabilities and stockholders' equity": {
-        "2022": 362562,
-        "2023": 394868
       }
     }
   }

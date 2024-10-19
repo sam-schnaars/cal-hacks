@@ -4,43 +4,48 @@ import data from "../google_balance_sheet.json";
 const LiabilitiesTable = (dataType) => {
   const selectedData = data["Liabilities and Stockholders' Equity"];
 
+  const formatNumber = (num) => {
+    if (num === undefined || num === null) return '-';
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
+  
   const renderRows = (subcategory, items) => {
     return Object.entries(items).map(([item, values]) => (
-      <tr key={item} className="border b-2">
-        <td className="pr-4 pl-4">{item}</td>
-        <td className="pr-4 pl-4">${values['2022']}</td>
-        <td className="pr-4 pl-4">${values['2023']}</td>
+      <tr key={item}>
+        <td className="border border-gray-400 px-2 py-1 text-xs">{item}</td>
+        <td className="border border-gray-400 px-2 py-1 text-xs">${formatNumber(values['2022'])}</td>
+        <td className="border border-gray-400 px-2 py-1 text-xs">${formatNumber(values['2023'])}</td>
       </tr>
     ));
   };
 
   const generateTableRows = () => {
     const rows = [];
-    Object.entries(selectedData).forEach(([subcategory, items]) => {
-      // Add subcategory row (Current liabilities, Non-current liabilities)
+    Object.entries(data["Liabilities and Stockholders' Equity"]).forEach(([subcategory, items]) => {
       rows.push(
-        <tr key={subcategory} className='pl-2 pr-2'>
-          <td colSpan="3" style={{ fontWeight: 'bold' }} className='pl-2 pr-2'>{subcategory}</td>
+        <tr key={subcategory}>
+          <td colSpan="3" className="border border-gray-400 px-2 py-1 text-sm font-semibold bg-gray-100">{subcategory}</td>
         </tr>
       );
-      // Add individual item rows within the subcategory
-      rows.push(renderRows(subcategory, items));
+      rows.push(...renderRows(subcategory, items));
     });
     return rows;
   };
 
   return (
     <div>
-      <h1 className='font-bold text-lg'>Liabilities</h1>
-      <table className="border b-2 pl-2 pr-2">
-        <thead className="border b-2 pl-4 pr-4">
-          <tr className="border b-2">
-            <th className="border b-2">Subcategory</th>
-            <th>2022</th>
-            <th>2023</th>
+      <h2 className='font-bold text-xs mb-2'>Liabilities</h2>
+      <table className="border-collapse w-full">
+        <thead>
+          <tr>
+            <th className="border border-gray-400 px-2 py-1 text-sm font-semibold bg-gray-200">Liabilities</th>
+            <th className="border border-gray-400 px-2 py-1 text-sm font-semibold bg-gray-200">2022</th>
+            <th className="border border-gray-400 px-2 py-1 text-sm font-semibold bg-gray-200">2023</th>
           </tr>
         </thead>
-        <tbody className="border b-2 pl-2 pr-2">{generateTableRows()}</tbody>
+        <tbody>
+          {generateTableRows()}
+        </tbody>
       </table>
     </div>
   );
