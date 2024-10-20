@@ -129,6 +129,7 @@ const Sidebar = ({ currentQuestionIndex, handleOptionSelect, selectedOption, isA
         )}
 
       </div>
+      </div>
     </div>
   );
 };

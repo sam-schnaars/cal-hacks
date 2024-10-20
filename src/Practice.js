@@ -107,12 +107,6 @@ function PracticeScreen() {
               Next
             </button>
           </div>
-        </main>
-
-        {/* Fixed Footer Section */}
-        <div className="p-4 flex justify-end gap-4 border-t-2">
-          <button className="px-4 py-2 bg-gray-300 rounded">IDK</button>
-          <button className="px-4 py-2 bg-blue-500 text-white rounded">Next</button>
         </div>
       </div>
     </div>
