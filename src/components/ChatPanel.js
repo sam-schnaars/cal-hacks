@@ -11,6 +11,7 @@ const ChatPanel = ({ currentQuestion }) => {
   const [isChatOpen, setIsChatOpen] = useState(false);
   const messagesEndRef = useRef(null);
 
+  const serverUrl = "https://calhacks-chatbot-868376672344.us-central1.run.app";
   const instructions = "The user is a student trying to study accounting. The user is trying to answer a real-world question about a company's 10K and the user needs your help in understanding the answer better. Here is the question, answer options and a one-line explanation the user was given. The user still couldn't understand despite the explanation. Hence, using the explanation as reference, the user needs your help in understanding this even better. Keep your answer simple, concise and related to the below question answer without adding outside info of your own.";
 
   useEffect(() => {
@@ -35,7 +36,7 @@ const ChatPanel = ({ currentQuestion }) => {
         Income Statement: ${JSON.stringify(incomeData, null, 2)}
         Cash Flow Statement: ${JSON.stringify(cashFlowData, null, 2)}`;
       
-      const result = await axios.post('http://localhost:3001/chat', { prompt: fullPrompt });
+      const result = await axios.post(`${serverUrl}/chat`, { prompt: fullPrompt });
       setMessages(prevMessages => [...prevMessages, { type: 'bot', content: result.data.generated_text }]);
     } catch (error) {
       console.error('Error:', error);
