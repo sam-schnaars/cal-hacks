@@ -43,7 +43,7 @@ const IncomeAndCashFlowTable = (question) => {
       <table className="border-collapse w-full mb-8">
         <thead>
           <tr>
-            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>Income Statement</th>
+            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>Income Statement (in millions)</th>
             <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>2022</th>
             <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>2023</th>
           </tr>
@@ -56,7 +56,7 @@ const IncomeAndCashFlowTable = (question) => {
       <table className="border-collapse w-full">
         <thead>
           <tr>
-            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>Cash Flow Statement</th>
+            <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>Cash Flow Statement (in millions)</th>
             <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>2022</th>
             <th className="border border-gray-400 px-2 py-1 text-xs font-semibold bg-gray-200" style={{paddingLeft: '5px'}}>2023</th>
           </tr>
