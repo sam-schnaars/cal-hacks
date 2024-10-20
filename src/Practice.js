@@ -8,6 +8,7 @@ import BalanceSheetTable from './components/BalanceSheetTable.js';
 import Sidebar from "./components/Sidebar.js"
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import QuestionFooter from './components/questionFooter.js'
 
 function PracticeScreen() {
 
@@ -19,6 +20,10 @@ function PracticeScreen() {
 
   const [question, setQuestion] = useState({"highlight":[""]});
   const [index, setIndex] = useState(0);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [selectedOption, setSelectedOption] = useState(null); // Track the selected answer
+  const [isAnswered, setIsAnswered] = useState(false); // Track if the question is answered
+  const [feedback, setFeedback] = useState(''); // Store feedback message
 
   const navigate = useNavigate();
 
@@ -28,7 +33,7 @@ function PracticeScreen() {
 
   return (
     <div className='flex-col'>
-    <div className="flex h-screen bg-background text-foreground">
+    <div className="flex flex-row h-screen bg-background text-foreground">
       {/* Sidebar */}
       <Sidebar setQuestion={setQuestion}/>
       {/* Main Content */}
