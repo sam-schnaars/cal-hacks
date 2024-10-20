@@ -8,7 +8,7 @@ const ISTable = ({ question, isAnswered, company }) => {
   const highlights = question && question.highlight ? question.highlight.flat(2) : ["Inventory"];
 
   const isHighlighted = (key) => {
-    return isAnswered && highlights.some(highlight => key.toLowerCase().includes(highlight.toLowerCase()));
+    return isAnswered && highlights.some(highlight => key.toLowerCase() === highlight.toLowerCase());
   };
   const formatNumber = (num) => {
     if (num === null || num === undefined) return '';
