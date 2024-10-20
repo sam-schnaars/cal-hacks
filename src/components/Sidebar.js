@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import data from "../questions.json";
 import balanceSheetData from "../google_balance_sheet.json";
 import incomeData from "../google_income_statement.json";
 import cashFlowData from "../google_cash_flow.json";
+import data from "../google_questions.json";
 
-const Sidebar = () => {
+
+const Sidebar = ({setQuestion}) => {
   const questions = data.quiz.questions; // Use questions from the JSON
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -17,7 +19,7 @@ const Sidebar = () => {
   const handleOptionSelect = (optionId) => {
     setSelectedOption(optionId);
     setIsAnswered(true);
-
+    setQuestion(questions[currentQuestionIndex]);
     // Provide feedback on the selected answer
     if (optionId === questions[currentQuestionIndex].correctAnswer) {
       setFeedback('Correct answer! ' + questions[currentQuestionIndex].explanation);
@@ -42,8 +44,8 @@ const Sidebar = () => {
     } else {
       alert('Please select the correct answer before proceeding.');
     }
+    setQuestion({"highlight":[""]});
   };
-
   // Function to handle moving to the previous question
   const handlePrevious = () => {
     setCurrentQuestionIndex((prevIndex) => {
@@ -56,6 +58,13 @@ const Sidebar = () => {
       }
       return prevIndex; // No change if on the first question
     });
+    setQuestion({"highlight":[""]});
+  };
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/'); // Navigate to the AnotherPage
   };
 
   // Chat bot for further clarification
@@ -87,8 +96,11 @@ const Sidebar = () => {
 
   return (
     <div className="w-64 border-r bg-muted flex flex-col h-screen">
-      <div className="flex-grow overflow-auto">
-        <div className="p-4 font-semibold text-lg border-b">{data.quiz.title}</div>
+      <div className='border-b'>
+          <button onClick={handleButtonClick}><div className="text-4xl font-bold p-4">10k-cademy</div></button>
+      </div>
+      <div className="p-4 font-semibold text-lg border-b">{data.quiz.title}</div> {/* Display quiz title */}
+      <div className="h-[calc(100vh-57px)]">
         <nav className="p-2">
           {/* Display the current question */}
           <div className="p-2 rounded-md bg-primary text-primary-foreground">
