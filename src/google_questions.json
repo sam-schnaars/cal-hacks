@@ -13,7 +13,7 @@
                 ],
                 "correctAnswer": "c",
                 "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $307,394 million.",
-                "highlight": [["Revenues"]]
+                "highlight": [["Cash and cash equivalents"]]
             },
             {
                 "question_id": 2,
@@ -65,7 +65,7 @@
                 ],
                 "correctAnswer": "b",
                 "explanation": "The income statement shows operating income of $74,842 million for 2023.",
-                "highlight": [["Income Statement", "Operating Income"]]
+                "highlight": [["Income Statement", "Net income"]]
             },
             {
                 "question_id": 6,
