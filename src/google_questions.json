@@ -1,6 +1,7 @@
 {
     "quiz": {
-        "title": "Accounting Quiz: Alphabet Inc. Financial Statement Analysis",
+        "ticker": "GOOG",
+        "title": "Alphabet, Inc.",
         "questions": [
             {
                 "question_id": 1,

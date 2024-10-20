@@ -10,12 +10,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import Homepage from './Home.tsx';
 import PracticeScreen from './Practice.js';
-import BSTable from './components/BSTable.js';
-import ISTable from './components/ISTable.js';
-import CFSTable from './components/CFSTable.js';
 
 function App() {
 
+  // are these necessary anymore @sam?
   const questions = [
     "What is the value of the companies assets?",
     "What is the value of the companies liabilites?",

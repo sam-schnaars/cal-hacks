@@ -10,7 +10,9 @@ const BSTable = (question) => {
   };
   const formatNumber = (num) => {
     if (num === null || num === undefined) return '';
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    const absNum = Math.abs(num);
+    const formattedNum = absNum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return num < 0 ? `(${formattedNum})` : formattedNum;
   };
 
   const renderRows = () => {
