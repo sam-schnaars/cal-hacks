@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import data from "../google_questions.json";
@@ -91,42 +90,35 @@ const Sidebar = ({
               {questions[currentQuestionIndex].text}
             </div>
 
-          <div className="mt-4">
-            {questions[currentQuestionIndex].options.map((option, index) => (
-              <div key={option.id} className="flex items-center mb-2">
-                <input
-                  type="radio"
-                  id={option.id}
-                  name="options"
-                  value={option.id}
-                  checked={selectedOptionBeforeCheck === option.id}
-                  onChange={() => handleOptionSelect(option.id)}
-                  className="hidden"
-                />
-                <label
-                  htmlFor={option.id}
-                  className="flex items-center p-2 rounded-md cursor-pointer transition-colors duration-200"
-                >
-                  <span className={`w-5 h-5 inline-block rounded-full mr-2 border-2 
-                    ${!isAnswered && (selectedOptionBeforeCheck === option.id || focusedOptionIndex === index) ? 'bg-gray-400' : 
-                      isAnswered && option.id === questions[currentQuestionIndex].correctAnswer ? 'bg-green-500' : 
-                      isAnswered && option.id === selectedOption ? 'bg-red-500' : 
-                      'bg-white'}`} 
+            <div className="mt-4">
+              {questions[currentQuestionIndex].options.map((option, index) => (
+                <div key={option.id} className="flex items-center mb-2">
+                  <input
+                    type="radio"
+                    id={option.id}
+                    name="options"
+                    value={option.id}
+                    checked={selectedOptionBeforeCheck === option.id}
+                    onChange={() => handleOptionSelect(option.id)}
+                    className="hidden"
                   />
-                  <span className="mr-2">{labels[index]})</span>
-                  <span className={`${isAnswered && option.id === selectedOption && option.id !== questions[currentQuestionIndex].correctAnswer ? 'text-gray-500' : ''}`}>
-                    {option.text}
-                  </span>
-                </label>
-              </div>
-            ))}
-          </div>
-
-          {isAnswered && (
-            <div className="mt-2">
-              <p className={`font-semibold ${selectedOption === questions[currentQuestionIndex].correctAnswer ? 'text-green-400' : 'text-red-400'}`}>
-                {feedback}
-              </p>
+                  <label
+                    htmlFor={option.id}
+                    className="flex items-center p-2 rounded-md cursor-pointer transition-colors duration-200"
+                  >
+                    <span className={`w-5 h-5 inline-block rounded-full mr-2 border-2 
+                      ${!isAnswered && (selectedOptionBeforeCheck === option.id || focusedOptionIndex === index) ? 'bg-gray-400' : 
+                        isAnswered && option.id === questions[currentQuestionIndex].correctAnswer ? 'bg-green-500' : 
+                        isAnswered && option.id === selectedOption ? 'bg-red-500' : 
+                        'bg-white'}`} 
+                    />
+                    <span className="mr-2">{labels[index]})</span>
+                    <span className={`${isAnswered && option.id === selectedOption && option.id !== questions[currentQuestionIndex].correctAnswer ? 'text-gray-500' : ''}`}>
+                      {option.text}
+                    </span>
+                  </label>
+                </div>
+              ))}
             </div>
 
             {isAnswered && (
@@ -136,7 +128,6 @@ const Sidebar = ({
                 </p>
               </div>
             )}
-
           </nav>
         </div>
       </div>
