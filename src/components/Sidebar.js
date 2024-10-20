@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import data from "../questions.json";
+import data from "../google_questions.json";
+import { useNavigate } from 'react-router-dom';
 
-const Sidebar = () => {
+const Sidebar = ({setQuestion}) => {
   const questions = data.quiz.questions; // Use questions from the JSON
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -13,7 +14,7 @@ const Sidebar = () => {
   const handleOptionSelect = (optionId) => {
     setSelectedOption(optionId);
     setIsAnswered(true);
-
+    setQuestion(questions[currentQuestionIndex]);
     // Provide feedback on the selected answer
     if (optionId === questions[currentQuestionIndex].correctAnswer) {
       setFeedback('Correct answer!');
@@ -38,8 +39,8 @@ const Sidebar = () => {
     } else {
       alert('Please select the correct answer before proceeding.');
     }
+    setQuestion({"highlight":[""]});
   };
-
   // Function to handle moving to the previous question
   const handlePrevious = () => {
     setCurrentQuestionIndex((prevIndex) => {
@@ -52,11 +53,25 @@ const Sidebar = () => {
       }
       return prevIndex; // No change if on the first question
     });
+    setQuestion({"highlight":[""]});
+  };
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/'); // Navigate to the AnotherPage
   };
 
   return (
     <div className="w-64 border-r bg-muted">
-      <div className="p-4 font-semibold text-lg border-b">{data.quiz.title}</div> {/* Display quiz title */}
+        <div className='border-b'>
+        <button onClick={handleButtonClick}><div className="text-4xl font-bold p-4">10k-cademy</div></button>
+        </div>
+      <div className="p-4 font-semibold text-lg border-b">
+        
+        
+        {data.quiz.title}
+        </div> {/* Display quiz title */}
       <div className="h-[calc(100vh-57px)]">
         <nav className="p-2">
           {/* Display the current question */}
