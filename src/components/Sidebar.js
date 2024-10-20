@@ -14,7 +14,7 @@ const Sidebar = ({ currentQuestionIndex, handleOptionSelect, selectedOption, isA
   return (
     <div className="w-64 border-r bg-muted">
       <div className='border-b'>
-        <button onClick={handleButtonClick}><div className="text-4xl font-bold p-4">10k-cademy</div></button>
+        <button onClick={handleButtonClick}><div className="text-4xl font-bold p-4">10-Kademy</div></button>
       </div>
       <div className="p-4 font-semibold text-lg border-b">
         <div className="flex items-center">

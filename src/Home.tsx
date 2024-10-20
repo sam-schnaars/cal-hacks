@@ -21,7 +21,7 @@ export default function Homepage() {
       <div className="flex flex-col justify-center p-8 flex-grow">
         <section className="py-5 bg-muted flex-grow flex flex-col justify-center">
           <div>
-          <h1 className="text-8xl font-bold  mb-4 text-left pb-2">10K-cademy</h1>
+          <h1 className="text-8xl font-bold  mb-4 text-left pb-2">10-Kademy</h1>
           <div className="container px-4">
             <h2 className="text-lg text-left mb-8">Interactive accounting on any public company's 10K</h2>
             <form onSubmit={handleCompanySearch} className="max-w-md">

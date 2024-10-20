@@ -93,6 +93,9 @@ function PracticeScreen() {
           >
             Back
           </button>
+          <div className="text-center">
+            {currentQuestionIndex + 1}/{10}
+          </div>
           <div className="flex gap-4">
             <button className="bg-gray-300 text-black font-bold border border-black rounded-lg px-4 py-2">Idk</button>
             <button
