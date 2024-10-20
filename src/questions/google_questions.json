@@ -14,7 +14,7 @@
                 ],
                 "correctAnswer": "c",
                 "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $307,394 million.",
-                "highlight": [["Cash and cash equivalents"]]
+                "highlight": [["Income Statement", "Revenues"]]
             },
             {
                 "question_id": 2,
@@ -26,8 +26,8 @@
                     {"id": "d", "text": "12%"}
                 ],
                 "correctAnswer": "a",
-                "explanation": "Revenue growth rate = (2023 revenue - 2022 revenue) / 2022 revenue = (282,474 - 265,696) / 265,696 = 6%",
-                "highlight": [["Revenues", "Cost of Revenues"]]
+                "explanation": "Revenue growth rate = (2023 revenue - 2022 revenue) / 2022 revenue = (307,394 - 282,836) / 282,836 = 6%",
+                "highlight": [["Income Statement", "Revenues"]]
             },
             {
                 "question_id": 3,
@@ -39,8 +39,8 @@
                     {"id": "d", "text": "57%"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "Gross profit margin = (Total revenues - Cost of revenues) / Total revenues = (282,474 - 126,203) / 282,474 = 55%",
-                "highlight": [["Revenues", "Cost of Revenues"]]
+                "explanation": "Gross profit margin = (Total revenues - Cost of revenues) / Total revenues = (307,394 - 133,332) / 307,394 = 55%",
+                "highlight": [["Income Statement", "Revenues"], ["Income Statement", "Cost of revenues"]]
             },
             {
                 "question_id": 4,
@@ -52,8 +52,8 @@
                     {"id": "d", "text": "Hedging gains"}
                 ],
                 "correctAnswer": "a",
-                "explanation": "Google Services contributed $253,667 million, which is the largest segment revenue.",
-                "highlight": [["Income Statement", "Segment Information"]]
+                "explanation": "Google Services contributed the largest revenue segment for Alphabet.",
+                "highlight": [["Income Statement", "Revenues"]]
             },
             {
                 "question_id": 5,
@@ -64,9 +64,9 @@
                     {"id": "c", "text": "$84,272 million"},
                     {"id": "d", "text": "$86,068 million"}
                 ],
-                "correctAnswer": "b",
-                "explanation": "The income statement shows operating income of $74,842 million for 2023.",
-                "highlight": [["Income Statement", "Net income"]]
+                "correctAnswer": "c",
+                "explanation": "The income statement shows operating income of $84,272 million for 2023.",
+                "highlight": [["Income Statement", "Income from operations"]]
             },
             {
                 "question_id": 6,
@@ -78,8 +78,8 @@
                     {"id": "d", "text": "19%"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "Effective tax rate = Provision for income taxes / Income before income taxes = 13,465 / 79,042 = 17%",
-                "highlight": [["Income Statement", "Provision For Income Taxes"], ["Income Statement", "Income Before Income Taxes"]]
+                "explanation": "Effective tax rate = Provision for income taxes / Income before income taxes = 11,922 / 85,717 = 17%",
+                "highlight": [["Income Statement", "Provision for income taxes"], ["Income Statement", "Income before income taxes"]]
             },
             {
                 "question_id": 7,
@@ -90,9 +90,9 @@
                     {"id": "c", "text": "$5.31"},
                     {"id": "d", "text": "$5.91"}
                 ],
-                "correctAnswer": "c",
-                "explanation": "The income statement shows basic EPS for Class A and B common stock as $5.31.",
-                "highlight": [["Income Statement", "Basic Earnings Per Share"]]
+                "correctAnswer": "b",
+                "explanation": "The income statement shows basic EPS for Class A and B common stock as $5.80.",
+                "highlight": [["Income Statement", "Basic net income per share"]]
             },
             {
                 "question_id": 8,
@@ -100,25 +100,25 @@
                 "options": [
                     {"id": "a", "text": "$21,879 million"},
                     {"id": "b", "text": "$22,583 million"},
-                    {"id": "c", "text": "$23,707 million"},
+                    {"id": "c", "text": "$24,048 million"},
                     {"id": "d", "text": "$24,911 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "The balance sheet shows cash and cash equivalents of $23,707 million.",
-                "highlight": [["Balance Sheet", "Assets", "Current Assets", "Cash And Cash Equivalents"]]
+                "explanation": "The balance sheet shows cash and cash equivalents of $24,048 million.",
+                "highlight": [["Balance Sheet", "Cash and cash equivalents"]]
             },
             {
                 "question_id": 9,
                 "text": "What was Alphabet's total current assets as of December 31, 2023?",
                 "options": [
                     {"id": "a", "text": "$163,326 million"},
-                    {"id": "b", "text": "$164,795 million"},
+                    {"id": "b", "text": "$171,530 million"},
                     {"id": "c", "text": "$165,750 million"},
                     {"id": "d", "text": "$166,245 million"}
                 ],
                 "correctAnswer": "b",
-                "explanation": "The balance sheet shows total current assets of $164,795 million.",
-                "highlight": [["Balance Sheet", "Assets", "Current Assets", "Total Current Assets"]]
+                "explanation": "The balance sheet shows total current assets of $171,530 million.",
+                "highlight": [["Balance Sheet", "Total current assets"]]
             },
             {
                 "question_id": 10,
@@ -126,77 +126,12 @@
                 "options": [
                     {"id": "a", "text": "$9,654 million"},
                     {"id": "b", "text": "$11,417 million"},
-                    {"id": "c", "text": "$13,241 million"},
+                    {"id": "c", "text": "$13,253 million"},
                     {"id": "d", "text": "$14,701 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "The balance sheet shows long-term debt of $13,241 million.",
-                "highlight": [["Balance Sheet", "Liabilities", "Long Term Liabilities", "Long Term Debt"]]
-            },
-            {
-                "question_id": 11,
-                "text": "What was Alphabet's total stockholders' equity as of December 31, 2023?",
-                "options": [
-                    {"id": "a", "text": "$251,836 million"},
-                    {"id": "b", "text": "$253,403 million"},
-                    {"id": "c", "text": "$255,570 million"},
-                    {"id": "d", "text": "$257,134 million"}
-                ],
-                "correctAnswer": "c",
-                "explanation": "The balance sheet shows total stockholders' equity of $255,570 million.",
-                "highlight": [["Balance Sheet", "Stockholders' Equity", "Total Stockholders' Equity"]]
-            },
-            {
-                "question_id": 12,
-                "text": "What was Alphabet's net cash provided by operating activities in 2023?",
-                "options": [
-                    {"id": "a", "text": "$84,372 million"},
-                    {"id": "b", "text": "$91,495 million"},
-                    {"id": "c", "text": "$96,883 million"},
-                    {"id": "d", "text": "$98,490 million"}
-                ],
-                "correctAnswer": "b",
-                "explanation": "The cash flow statement shows net cash provided by operating activities of $91,495 million.",
-                "highlight": [["Cash Flow Statement", "Operating Activities", "Net Cash Provided By Operating Activities"]]
-            },
-            {
-                "question_id": 13,
-                "text": "How much did Alphabet spend on capital expenditures in 2023?",
-                "options": [
-                    {"id": "a", "text": "$29,240 million"},
-                    {"id": "b", "text": "$30,597 million"},
-                    {"id": "c", "text": "$31,485 million"},
-                    {"id": "d", "text": "$32,303 million"}
-                ],
-                "correctAnswer": "b",
-                "explanation": "The cash flow statement shows purchases of property and equipment (capital expenditures) of $30,597 million.",
-                "highlight": [["Cash Flow Statement", "Investing Activities", "Purchases Of Property And Equipment"]]
-            },
-            {
-                "question_id": 14,
-                "text": "What was Alphabet's free cash flow in 2023?",
-                "options": [
-                    {"id": "a", "text": "$59,948 million"},
-                    {"id": "b", "text": "$60,898 million"},
-                    {"id": "c", "text": "$61,300 million"},
-                    {"id": "d", "text": "$61,755 million"}
-                ],
-                "correctAnswer": "d",
-                "explanation": "Free cash flow = Net cash provided by operating activities - Capital expenditures = 91,495 - 30,597 = $61,755 million.",
-                "highlight": [["Cash Flow Statement", "Operating Activities", "Net Cash Provided By Operating Activities"], ["Cash Flow Statement", "Investing Activities", "Purchases Of Property And Equipment"]]
-            },
-            {
-                "question_id": 15,
-                "text": "What was Alphabet's total comprehensive income for 2023?",
-                "options": [
-                    {"id": "a", "text": "$59,243 million"},
-                    {"id": "b", "text": "$61,340 million"},
-                    {"id": "c", "text": "$62,771 million"},
-                    {"id": "d", "text": "$64,012 million"}
-                ],
-                "correctAnswer": "c",
-                "explanation": "The statement of comprehensive income shows total comprehensive income of $62,771 million.",
-                "highlight": [["Income Statement", "Comprehensive Income", "Total Comprehensive Income"]]
+                "explanation": "The balance sheet shows long-term debt of $13,253 million.",
+                "highlight": [["Balance Sheet", "Long-term debt"]]
             }
         ]
     }
