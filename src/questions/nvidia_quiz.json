@@ -1,0 +1,304 @@
+{
+    "quiz": {
+        "ticker": "NVDA",
+        "title": "NVIDIA Corporation",
+        "questions": [
+            {
+                "question_id": 1,
+                "text": "What was NVIDIA's total revenue for the year ended January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$60,922 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$26,974 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$16,621 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$32,972 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "According to the income statement, NVIDIA's total revenue for the year ended January 28, 2024, was $60,922 million.",
+                "highlight": [
+                    [
+                        "Revenue"
+                    ]
+                ]
+            },
+            {
+                "question_id": 2,
+                "text": "What was NVIDIA's gross profit margin for the year ended January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "55%"
+                    },
+                    {
+                        "id": "b",
+                        "text": "65%"
+                    },
+                    {
+                        "id": "c",
+                        "text": "72%"
+                    },
+                    {
+                        "id": "d",
+                        "text": "73%"
+                    }
+                ],
+                "correctAnswer": "d",
+                "explanation": "Gross profit margin = (Gross profit / Revenue) = ($44,301 / $60,922) = 72.7%, which rounds to 73%.",
+                "highlight": [
+                    [
+                        "Gross Profit"
+                    ],
+                    [
+                        "Revenue"
+                    ]
+                ]
+            },
+            {
+                "question_id": 3,
+                "text": "What was NVIDIA\u2019s operating income for the year ended January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$32,972 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$44,301 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$33,818 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$29,760 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "The income statement shows operating income of $32,972 million.",
+                "highlight": [
+                    [
+                        "Operating Income"
+                    ]
+                ]
+            },
+            {
+                "question_id": 4,
+                "text": "What was NVIDIA's total current assets as of January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$23,073 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$41,182 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$44,345 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$65,728 million"
+                    }
+                ],
+                "correctAnswer": "c",
+                "explanation": "The balance sheet shows total current assets of $44,345 million.",
+                "highlight": [
+                    [
+                        "Total Current Assets"
+                    ]
+                ]
+            },
+            {
+                "question_id": 5,
+                "text": "What was the percentage change in NVIDIA's cash and cash equivalents from January 29, 2023, to January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "115%"
+                    },
+                    {
+                        "id": "b",
+                        "text": "92%"
+                    },
+                    {
+                        "id": "c",
+                        "text": "65%"
+                    },
+                    {
+                        "id": "d",
+                        "text": "102%"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "Percentage change = (New amount - Old amount) / Old amount = ($7,280 - $3,389) / $3,389 = 115%.",
+                "highlight": [
+                    [
+                        "Cash and Cash Equivalents"
+                    ]
+                ]
+            },
+            {
+                "question_id": 6,
+                "text": "What was NVIDIA's net cash provided by operating activities for the year ended January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$5,641 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$28,090 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$9,732 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$29,760 million"
+                    }
+                ],
+                "correctAnswer": "b",
+                "explanation": "The cash flow statement shows net cash provided by operating activities of $28,090 million.",
+                "highlight": [
+                    [
+                        "Net Cash Provided by Operating Activities"
+                    ]
+                ]
+            },
+            {
+                "question_id": 7,
+                "text": "How much did NVIDIA spend on capital expenditures for property and equipment during the year ended January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$1,069 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$18,211 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$6,081 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$395 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "The cash flow statement shows purchases related to property and equipment and intangible assets of $1,069 million.",
+                "highlight": [
+                    [
+                        "Purchases related to property and equipment"
+                    ]
+                ]
+            },
+            {
+                "question_id": 8,
+                "text": "What was NVIDIA's basic earnings per share for the year ended January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$11.93"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$12.05"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$3.91"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$1.76"
+                    }
+                ],
+                "correctAnswer": "b",
+                "explanation": "The income statement shows basic earnings per share (EPS) of $12.05.",
+                "highlight": [
+                    [
+                        "Basic Earnings Per Share"
+                    ]
+                ]
+            },
+            {
+                "question_id": 9,
+                "text": "What was NVIDIA's total liabilities as of January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$22,750 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$19,081 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$44,345 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$65,728 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "The balance sheet shows total liabilities of $22,750 million.",
+                "highlight": [
+                    [
+                        "Total Liabilities"
+                    ]
+                ]
+            },
+            {
+                "question_id": 10,
+                "text": "What was NVIDIA's effective tax rate for the year ended January 28, 2024?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "11%"
+                    },
+                    {
+                        "id": "b",
+                        "text": "12%"
+                    },
+                    {
+                        "id": "c",
+                        "text": "19%"
+                    },
+                    {
+                        "id": "d",
+                        "text": "15%"
+                    }
+                ],
+                "correctAnswer": "d",
+                "explanation": "Effective tax rate = (Income tax expense / Income before income tax) = ($4,058 / $33,818) = 12%.",
+                "highlight": [
+                    [
+                        "Income Tax Expense"
+                    ],
+                    [
+                        "Income Before Income Tax"
+                    ]
+                ]
+            }
+        ]
+    }
+}

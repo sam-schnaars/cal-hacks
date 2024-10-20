@@ -1,0 +1,207 @@
+{
+    "Cash flows from operating activities": {
+        "2021": null,
+        "2022": null,
+        "2023": null
+    },
+    "Net income": {
+        "2021": 9752,
+        "2022": 4368,
+        "2023": 29760
+    },
+    "Adjustments to reconcile net income to net cash provided by operating activities": {
+        "2021": null,
+        "2022": null,
+        "2023": null
+    },
+    "Stock-based compensation expense": {
+        "2021": 2004,
+        "2022": 2709,
+        "2023": 3549
+    },
+    "Depreciation and amortization": {
+        "2021": 1174,
+        "2022": 1544,
+        "2023": 1508
+    },
+    "Deferred income taxes": {
+        "2021": -406,
+        "2022": -2164,
+        "2023": -2489
+    },
+    "(Gains) losses on investments in non-affiliated entities, net": {
+        "2021": -100,
+        "2022": 45,
+        "2023": -238
+    },
+    "Acquisition termination cost": {
+        "2021": null,
+        "2022": 1353,
+        "2023": null
+    },
+    "Other": {
+        "2021": 47,
+        "2022": -7,
+        "2023": -278
+    },
+    "Changes in operating assets and liabilities, net of acquisitions": {
+        "2021": null,
+        "2022": null,
+        "2023": null
+    },
+    "Accounts receivable": {
+        "2021": -2215,
+        "2022": 822,
+        "2023": -6172
+    },
+    "Inventories": {
+        "2021": -774,
+        "2022": -2554,
+        "2023": -98
+    },
+    "Prepaid expenses and other assets": {
+        "2021": -1715,
+        "2022": -1517,
+        "2023": -1522
+    },
+    "Accounts payable": {
+        "2021": 568,
+        "2022": -551,
+        "2023": 1531
+    },
+    "Accrued and other current liabilities": {
+        "2021": 581,
+        "2022": 1341,
+        "2023": 2025
+    },
+    "Other long-term liabilities": {
+        "2021": 192,
+        "2022": 252,
+        "2023": 514
+    },
+    "Net cash provided by operating activities": {
+        "2021": 9108,
+        "2022": 5641,
+        "2023": 28090
+    },
+    "Cash flows from investing activities": {
+        "2021": null,
+        "2022": null,
+        "2023": null
+    },
+    "Proceeds from maturities of marketable securities": {
+        "2021": 15197,
+        "2022": 19425,
+        "2023": 9732
+    },
+    "Proceeds from sales of marketable securities": {
+        "2021": 1023,
+        "2022": 1806,
+        "2023": 50
+    },
+    "Purchases of marketable securities": {
+        "2021": -24787,
+        "2022": -11897,
+        "2023": -18211
+    },
+    "Purchases related to property and equipment and intangible assets": {
+        "2021": -976,
+        "2022": -1833,
+        "2023": -1069
+    },
+    "Acquisitions, net of cash acquired": {
+        "2021": -263,
+        "2022": -49,
+        "2023": -83
+    },
+    "Investments in non-affiliated entities and other, net": {
+        "2021": -24,
+        "2022": -77,
+        "2023": -985
+    },
+    "Net cash provided by (used in) investing activities": {
+        "2021": -9830,
+        "2022": 7375,
+        "2023": -10566
+    },
+    "Cash flows from financing activities": {
+        "2021": null,
+        "2022": null,
+        "2023": null
+    },
+    "Proceeds related to employee stock plans": {
+        "2021": 281,
+        "2022": 355,
+        "2023": 403
+    },
+    "Payments related to repurchases of common stock": {
+        "2021": null,
+        "2022": -10039,
+        "2023": -9533
+    },
+    "Payments related to tax on restricted stock units": {
+        "2021": -1904,
+        "2022": -1475,
+        "2023": -2783
+    },
+    "Repayment of debt": {
+        "2021": -1000,
+        "2022": null,
+        "2023": -1250
+    },
+    "Dividends paid": {
+        "2021": -399,
+        "2022": -398,
+        "2023": -395
+    },
+    "Principal payments on property and equipment and intangible assets": {
+        "2021": -83,
+        "2022": -58,
+        "2023": -74
+    },
+    "Issuance of debt, net of issuance costs": {
+        "2021": 4977,
+        "2022": null,
+        "2023": null
+    },
+    "Other": {
+        "2021": -7,
+        "2022": -2,
+        "2023": -1
+    },
+    "Net cash provided by (used in) financing activities": {
+        "2021": 1865,
+        "2022": -11617,
+        "2023": -13633
+    },
+    "Change in cash and cash equivalents": {
+        "2021": 1143,
+        "2022": 1399,
+        "2023": 3891
+    },
+    "Cash and cash equivalents at beginning of period": {
+        "2021": 847,
+        "2022": 1990,
+        "2023": 3389
+    },
+    "Cash and cash equivalents at end of period": {
+        "2021": 1990,
+        "2022": 3389,
+        "2023": 7280
+    },
+    "Supplemental disclosures of cash flow information": {
+        "2021": null,
+        "2022": null,
+        "2023": null
+    },
+    "Cash paid for income taxes, net": {
+        "2021": 396,
+        "2022": 1404,
+        "2023": 6549
+    },
+    "Cash paid for interest": {
+        "2021": 246,
+        "2022": 254,
+        "2023": 252
+    }
+}

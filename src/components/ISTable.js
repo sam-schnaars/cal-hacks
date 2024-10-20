@@ -1,7 +1,10 @@
 import React from 'react';
-import data from '../gis.json';
+import gis from '../jsons/gis.json';
+import aaplIs from '../jsons/aapl-is.json';
+import nis from '../jsons/nis.json';
 
-const ISTable = ({ question, isAnswered }) => {
+const ISTable = ({ question, isAnswered, company }) => {
+  const data = company === 'GOOG' ? gis : company === 'AAPL' ? aaplIs : nis;
   const highlights = question && question.highlight ? question.highlight.flat(2) : ["Inventory"];
 
   const isHighlighted = (key) => {

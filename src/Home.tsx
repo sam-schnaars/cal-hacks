@@ -9,43 +9,15 @@ export default function Homepage() {
     name,
   }));
 
-  const [companySymbol, setCompanySymbol] = React.useState("");
-  const [suggestions, setSuggestions] = React.useState<{ symbol: string; name: string }[]>([]);
-  const [showSuggestions, setShowSuggestions] = React.useState(false);
-
-  const handleCompanySearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(`Searching for company: ${companySymbol}`);
-    setShowSuggestions(false); // Hide suggestions on submit
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const input = e.target.value;
-    setCompanySymbol(input);
-
-    if (input.length > 0) {
-      const filteredCompanies = companies.filter(
-        (company) =>
-          company.symbol.toLowerCase().includes(input.toLowerCase()) ||
-          company.name.toLowerCase().includes(input.toLowerCase())
-      );
-      setSuggestions(filteredCompanies);
-      setShowSuggestions(true);
-    } else {
-      setSuggestions([]);
-      setShowSuggestions(false);
-    }
-  };
-
-  const handleSuggestionClick = (symbol: string) => {
-    setCompanySymbol(symbol);
-    setShowSuggestions(false);
-  };
-
+  const [selectedCompany, setSelectedCompany] = React.useState("GOOG");
   const navigate = useNavigate();
 
+  const handleCompanySelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSelectedCompany(e.target.value);
+  };
+
   const handleButtonClick = () => {
-    navigate('/practice');
+    navigate('/practice', { state: { company: selectedCompany } });
   };
 
   return (
@@ -54,41 +26,29 @@ export default function Homepage() {
       <div className="flex flex-col justify-center p-8 flex-grow">
         <section className="py-5 bg-muted flex-grow flex flex-col justify-center">
           <div>
-            <h1 className="text-8xl font-bold mb-4 text-left pb-2">10K-cademy</h1>
+            <h1 className="text-8xl font-bold mb-4 text-left pb-2">10-Kademy</h1>
             <div className="container px-4">
-              <h2 className="text-lg text-left mb-8">Interactive accounting practice with 10-Ks from every public company</h2>
-              <form onSubmit={handleCompanySearch} className="max-w-md relative">
+              <h2 className="text-lg text-left mb-8">Interactive accounting practice with 10-Ks from every public company <span className="text-gray-500 ml-2">(coming soon)</span></h2>
+              <div className="max-w-md relative">
                 <div className="flex gap-2 mb-2">
-                  <input
-                    type="text"
-                    placeholder="Enter company (e.g., AAPL)"
-                    value={companySymbol}
-                    onChange={handleInputChange}
+                  <select
+                    value={selectedCompany}
+                    onChange={handleCompanySelect}
                     className="flex-grow border-2 rounded-lg p-1"
-                  />
+                    aria-label="Select a company"
+                  >
+                    <option value="GOOG">GOOG: Alphabet, Inc.</option>
+                    <option value="AAPL">AAPL: Apple, Inc.</option>
+                    <option value="NVDA">NVDA: NVIDIA Corp.</option>
+                  </select>
                   <button
-                    type="submit"
                     onClick={handleButtonClick}
                     className="bg-gray-800 text-white font-bold border border-black rounded-lg px-4 py-2 hover:bg-gray-700 transition-colors duration-300"
                   >
-                    Practice
+                    Test the Beta
                   </button>
                 </div>
-                {/* Suggestions Dropdown */}
-                {showSuggestions && suggestions.length > 0 && (
-                  <ul className="absolute bg-white border-2 rounded-lg w-full z-10 mt-1 max-h-40 overflow-y-auto">
-                    {suggestions.map((company, index) => (
-                      <li
-                        key={index}
-                        onClick={() => handleSuggestionClick(company.symbol)}
-                        className="p-2 cursor-pointer hover:bg-gray-100"
-                      >
-                        {company.name} ({company.symbol})
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </form>
+              </div>
             </div>
           </div>
         </section>

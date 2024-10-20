@@ -1,7 +1,10 @@
 import React from 'react';
-import data from '../gcfs.json';
+import gcf from '../jsons/gcfs.json';
+import aaplCfs from '../jsons/aapl-cfs.json';
+import ncfs from '../jsons/ncfs.json';
 
-const CFSTable = ({ question, isAnswered }) => {
+const CFSTable = ({ question, isAnswered, company }) => {
+  const data = company === 'GOOG' ? gcf : company === 'AAPL' ? aaplCfs : ncfs;
   const highlights = question && question.highlight ? question.highlight.flat(2) : ["Inventory"];
 
   const isHighlighted = (key) => {

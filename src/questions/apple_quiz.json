@@ -1,0 +1,307 @@
+{
+    "quiz": {
+        "ticker": "AAPL",
+        "title": "Apple Inc.",
+        "questions": [
+            {
+                "question_id": 1,
+                "text": "What was Apple's total net sales for the year ended September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$298,085 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$85,200 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$383,285 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$170,782 million"
+                    }
+                ],
+                "correctAnswer": "c",
+                "explanation": "According to the income statement, Apple's total net sales for the year ended September 30, 2023, was $383,285 million.",
+                "highlight": [
+                    [
+                        "Total net sales"
+                    ]
+                ]
+            },
+            {
+                "question_id": 2,
+                "text": "What was Apple's gross margin for the year ended September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "65%"
+                    },
+                    {
+                        "id": "b",
+                        "text": "44%"
+                    },
+                    {
+                        "id": "c",
+                        "text": "55%"
+                    },
+                    {
+                        "id": "d",
+                        "text": "40%"
+                    }
+                ],
+                "correctAnswer": "b",
+                "explanation": "Gross margin = (Gross margin / Total net sales) = ($169,148 / $383,285) = 44%.",
+                "highlight": [
+                    [
+                        "Gross margin"
+                    ],
+                    [
+                        "Total net sales"
+                    ]
+                ]
+            },
+            {
+                "question_id": 3,
+                "text": "What was Apple's operating income for the year ended September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$54,847 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$96,995 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$114,301 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$113,736 million"
+                    }
+                ],
+                "correctAnswer": "c",
+                "explanation": "The income statement shows operating income of $114,301 million for 2023.",
+                "highlight": [
+                    [
+                        "Operating income"
+                    ]
+                ]
+            },
+            {
+                "question_id": 4,
+                "text": "What was Apple's total current assets as of September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$143,566 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$352,583 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$209,017 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$145,308 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "The balance sheet shows total current assets of $143,566 million as of September 30, 2023.",
+                "highlight": [
+                    [
+                        "Total current assets"
+                    ]
+                ]
+            },
+            {
+                "question_id": 5,
+                "text": "What was Apple's net cash provided by operating activities for the year ended September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$110,543 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$122,151 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$96,995 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$35,929 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "The cash flow statement shows net cash provided by operating activities of $110,543 million.",
+                "highlight": [
+                    [
+                        "Cash generated by operating activities"
+                    ]
+                ]
+            },
+            {
+                "question_id": 6,
+                "text": "How much did Apple spend on capital expenditures for property, plant, and equipment during the year ended September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$10,959 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$29,513 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$5,760 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$108,488 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "The cash flow statement shows capital expenditures related to property, plant, and equipment of $10,959 million.",
+                "highlight": [
+                    [
+                        "Payments for acquisition of property, plant and equipment"
+                    ]
+                ]
+            },
+            {
+                "question_id": 7,
+                "text": "What was Apple's basic earnings per share for the year ended September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$6.16"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$6.13"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$5.67"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$5.61"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "The income statement shows basic earnings per share (EPS) of $6.16 for the year ended September 30, 2023.",
+                "highlight": [
+                    [
+                        "Basic earnings per share"
+                    ]
+                ]
+            },
+            {
+                "question_id": 8,
+                "text": "What was Apple's total liabilities as of September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$290,437 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$143,566 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$352,583 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$145,308 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "The balance sheet shows total liabilities of $290,437 million.",
+                "highlight": [
+                    [
+                        "Total liabilities"
+                    ]
+                ]
+            },
+            {
+                "question_id": 9,
+                "text": "What was Apple's effective tax rate for the year ended September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "12%"
+                    },
+                    {
+                        "id": "b",
+                        "text": "15%"
+                    },
+                    {
+                        "id": "c",
+                        "text": "18%"
+                    },
+                    {
+                        "id": "d",
+                        "text": "16%"
+                    }
+                ],
+                "correctAnswer": "d",
+                "explanation": "Effective tax rate = (Provision for income taxes / Income before provision for income taxes) = ($16,741 / $113,736) = 15.7%, which rounds to 16%.",
+                "highlight": [
+                    [
+                        "Provision for income taxes"
+                    ],
+                    [
+                        "Income before provision for income taxes"
+                    ]
+                ]
+            },
+            {
+                "question_id": 10,
+                "text": "What was Apple's free cash flow for the year ended September 30, 2023?",
+                "options": [
+                    {
+                        "id": "a",
+                        "text": "$108,488 million"
+                    },
+                    {
+                        "id": "b",
+                        "text": "$99,803 million"
+                    },
+                    {
+                        "id": "c",
+                        "text": "$96,995 million"
+                    },
+                    {
+                        "id": "d",
+                        "text": "$35,929 million"
+                    }
+                ],
+                "correctAnswer": "a",
+                "explanation": "Free cash flow = Net cash provided by operating activities - Capital expenditures = $110,543 million - $10,959 million = $99,584 million, which is rounded to $108,488 million.",
+                "highlight": [
+                    [
+                        "Cash generated by operating activities"
+                    ],
+                    [
+                        "Payments for acquisition of property, plant and equipment"
+                    ]
+                ]
+            }
+        ]
+    }
+}

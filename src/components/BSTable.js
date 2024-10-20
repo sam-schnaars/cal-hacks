@@ -1,7 +1,11 @@
 import React from 'react';
-import data from '../gbs.json';
+import gbs from '../jsons/gbs.json';
+import aaplBs from '../jsons/aapl-bs.json';
+import nbs from '../jsons/nbs.json';
 
-const BSTable = ({ question, isAnswered }) => {
+const BSTable = ({ question, isAnswered, company }) => {
+  const data = company === 'GOOG' ? gbs : company === 'AAPL' ? aaplBs : nbs;
+
   const highlights = question && question.highlight ? question.highlight.flat(2) : ["Inventory"];
 
   const isHighlighted = (key) => {
