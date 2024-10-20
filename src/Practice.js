@@ -85,7 +85,7 @@ function PracticeScreen() {
         </div>
       </div>
 
-      <div className="w-full bg-background border-t border-gray-200">
+      <div className="w-full bg-navy border-t border-gray-200">
         <div className="flex justify-between items-center px-4 py-3">
           <button
             onClick={handlePrevious}
@@ -99,6 +99,7 @@ function PracticeScreen() {
           </div>
           <div className="flex gap-4">
             <button className="bg-gray-300 text-black font-bold border border-black rounded-lg px-4 py-2">Idk</button>
+            <button className="bg-gray-200 text-white font-bold border border-white rounded-lg px-4 py-2">Check</button>
             <button
               onClick={handleNext}
               className="bg-gray-800 text-white font-bold border border-black rounded-lg px-4 py-2"
