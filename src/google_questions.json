@@ -8,12 +8,12 @@
                 "options": [
                     {"id": "a", "text": "$282,836 million"},
                     {"id": "b", "text": "$283,474 million"},
-                    {"id": "c", "text": "$282,474 million"},
+                    {"id": "c", "text": "$307,394 million"},
                     {"id": "d", "text": "$283,836 million"}
                 ],
                 "correctAnswer": "c",
-                "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $282,474 million.",
-                "highlight": [["Inventory", "Total Assets"]]
+                "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $307,394 million.",
+                "highlight": [["Revenues"]]
             },
             {
                 "question_id": 2,
@@ -26,7 +26,7 @@
                 ],
                 "correctAnswer": "a",
                 "explanation": "Revenue growth rate = (2023 revenue - 2022 revenue) / 2022 revenue = (282,474 - 265,696) / 265,696 = 6%",
-                "highlight": [["Cash And Cash Equivalents"]]
+                "highlight": [["Revenues", "Cost of Revenues"]]
             },
             {
                 "question_id": 3,
@@ -39,7 +39,7 @@
                 ],
                 "correctAnswer": "b",
                 "explanation": "Gross profit margin = (Total revenues - Cost of revenues) / Total revenues = (282,474 - 126,203) / 282,474 = 55%",
-                "highlight": [["Income Statement", "Total Revenue"], ["Income Statement", "Cost Of Revenues"]]
+                "highlight": [["Revenues", "Cost of Revenues"]]
             },
             {
                 "question_id": 4,

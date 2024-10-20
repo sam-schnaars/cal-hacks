@@ -29,9 +29,9 @@ const IncomeAndCashFlowTable = (question) => {
         const isBold = item === 'Net Income' || item.toLowerCase().startsWith('net cash') || item === 'Cash and Cash Equivalents at End of Period';
         return (
           <tr key={item}>
-            <td className={`border border-gray-400 px-2 py-1 text-xs ${isBold ? 'font-bold' : ''}`} style={{paddingLeft: `${5 + depth * 20}px`}}>{item}</td>
-            <td className={`border border-gray-400 px-2 py-1 text-xs text-right ${isBold ? 'font-bold' : ''}`} style={{paddingLeft: '5px'}}>{typeof values['2022'] === 'number' ? '$' : ''}{formatNumber(values['2022'])}</td>
-            <td className={`border border-gray-400 px-2 py-1 text-xs text-right ${isBold ? 'font-bold' : ''}`} style={{paddingLeft: '5px'}}>{typeof values['2023'] === 'number' ? '$' : ''}{formatNumber(values['2023'])}</td>
+            <td className={`border border-gray-400 px-2 py-1 text-xs ${isBold ? 'font-bold' : ''} ${isHighlighted(item) ? 'bg-yellow-300' : ''}`} style={{paddingLeft: `${5 + depth * 20}px`}}>{item}</td>
+            <td className={`border border-gray-400 px-2 py-1 text-xs text-right ${isBold ? 'font-bold' : ''} ${isHighlighted(item) ? 'bg-yellow-300' : ''}`} style={{paddingLeft: '5px'}}>{typeof values['2022'] === 'number' ? '$' : ''}{formatNumber(values['2022'])}</td>
+            <td className={`border border-gray-400 px-2 py-1 text-xs text-right ${isBold ? 'font-bold' : ''} ${isHighlighted(item) ? 'bg-yellow-300' : ''}`} style={{paddingLeft: '5px'}}>{typeof values['2023'] === 'number' ? '$' : ''}{formatNumber(values['2023'])}</td>
           </tr>
         );
       }

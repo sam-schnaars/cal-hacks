@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import data from "../google_questions.json";
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = ({setQuestion}) => {
   const questions = data.quiz.questions; // Use questions from the JSON
@@ -40,15 +41,6 @@ const Sidebar = ({setQuestion}) => {
     }
     setQuestion({"highlight":[""]});
   };
-
-  const setHighlight = () => {
-    return (
-        <div>
-
-        </div>
-    )
-  }
-
   // Function to handle moving to the previous question
   const handlePrevious = () => {
     setCurrentQuestionIndex((prevIndex) => {
@@ -64,9 +56,22 @@ const Sidebar = ({setQuestion}) => {
     setQuestion({"highlight":[""]});
   };
 
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/'); // Navigate to the AnotherPage
+  };
+
   return (
     <div className="w-64 border-r bg-muted">
-      <div className="p-4 font-semibold text-lg border-b">{data.quiz.title}</div> {/* Display quiz title */}
+        <div className='border-b'>
+        <button onClick={handleButtonClick}><div className="text-4xl font-bold p-4">10k-cademy</div></button>
+        </div>
+      <div className="p-4 font-semibold text-lg border-b">
+        
+        
+        {data.quiz.title}
+        </div> {/* Display quiz title */}
       <div className="h-[calc(100vh-57px)]">
         <nav className="p-2">
           {/* Display the current question */}
