@@ -91,7 +91,7 @@ const BalanceSheetTable = () => {
       <table className="border-collapse w-full">
         <thead>
           <tr>
-            <th colSpan="6" className="border border-gray-400 px-2 py-1 text-xs font-bold bg-gray-200">Balance Sheet</th>
+            <th colSpan="6" className="border border-gray-400 px-2 py-1 text-xs font-bold bg-gray-200">Balance Sheet (in millions)</th>
           </tr>
         </thead>
         <tbody>
