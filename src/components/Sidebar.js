@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import data from "../questions.json";
+import balanceSheetData from "../google_balance_sheet.json";
+import incomeData from "../google_income_statement.json";
+import cashFlowData from "../google_cash_flow.json";
 
 const Sidebar = () => {
   const questions = data.quiz.questions; // Use questions from the JSON
@@ -16,9 +20,9 @@ const Sidebar = () => {
 
     // Provide feedback on the selected answer
     if (optionId === questions[currentQuestionIndex].correctAnswer) {
-      setFeedback('Correct answer!');
+      setFeedback('Correct answer! ' + questions[currentQuestionIndex].explanation);
     } else {
-      setFeedback(`Incorrect answer. ${questions[currentQuestionIndex].explanation}`);
+      setFeedback('Incorrect answer. ' + questions[currentQuestionIndex].explanation);
     }
   };
 
@@ -52,6 +56,33 @@ const Sidebar = () => {
       }
       return prevIndex; // No change if on the first question
     });
+  };
+
+  // Chat bot for further clarification
+  const [prompt, setPrompt] = useState('');
+  const [response, setResponse] = useState('');
+  const [loading, setLoading] = useState(false);
+  const instructions = "The user is a student trying to study accounting. The user is trying to answer a real-world question about a company's 10K and the user needs your help in understanding the answer better. Here is the question, answer options and a one-line explanation the user was given. The user still couldn't understand despite the explanation. Hence, using the explanation as reference, the user needs your help in understanding this even better. Keep your answer simple, concise and related to the below question answer without adding outside info of your own.";
+
+  const handleAsk = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const currentQuestion = questions[currentQuestionIndex];
+      const contextString = `${instructions}\nQuestion: ${currentQuestion.text}\nOptions: ${currentQuestion.options.map(option => option.text).join(', ')}\nExplanation: ${currentQuestion.explanation}\n\n`;
+      const fullPrompt = `${contextString}User question: ${prompt}\n\n
+        Balance Sheet: ${JSON.stringify(balanceSheetData, null, 2)}
+        Income Statement: ${JSON.stringify(incomeData, null, 2)}
+        Cash Flow Statement: ${JSON.stringify(cashFlowData, null, 2)}`
+      ;
+      
+      const result = await axios.post('http://localhost:3001/chat', { prompt: fullPrompt });
+      setResponse(result.data.generated_text);
+    } catch (error) {
+      console.error('Error:', error);
+      setResponse('An error occurred while fetching the answer');
+    }
+    setLoading(false);
   };
 
   return (
@@ -101,6 +132,30 @@ const Sidebar = () => {
             </div>
           )}
         </nav>
+
+        {/* Chat bot for further clarification */}
+        <div className="ChatBot">
+          <h1>Still confused?</h1>
+          <form onSubmit={handleAsk}>
+            <textarea
+              value={ prompt}
+              onChange={(e) => setPrompt(e.target.value)}
+              placeholder="Ask away"
+              rows="4"
+              cols="50"
+            />
+            <br />
+            <button type="ask" disabled={loading}>
+              {loading ? 'Thinking...' : '_Ask_'}
+            </button>
+          </form>
+          {response && (
+            <div className="response">
+              <h2>Response:</h2>
+              <p>{response}</p>
+            </div>
+          )}
+        </div>
 
         {/* Navigation buttons for previous and next */}
         <div className="flex justify-between mt-4 px-2">
