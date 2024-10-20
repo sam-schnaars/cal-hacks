@@ -26,7 +26,7 @@ import nvidiaQuestions from "./questions/nvidia_quiz.json";
 
 function PracticeScreen() {
   const location = useLocation();
-  const [selectedCompany, setSelectedCompany] = useState(location.state?.company || 'GOOG');
+  const selectedCompany = location.state?.company || 'GOOG';
 
   const companyData = {
     GOOG: { bs: googleBS, is: googleIS, cfs: googleCFS, questions: googleQuestions },
@@ -148,7 +148,6 @@ function PracticeScreen() {
             bs, is, cfs, ticker: questions.quiz.ticker, title: questions.quiz.title
           }}
           selectedCompany={selectedCompany}
-          setSelectedCompany={setSelectedCompany}
         />
         <div className="flex-1 flex flex-col overflow-auto">
           <main className="flex-1 p-6">
