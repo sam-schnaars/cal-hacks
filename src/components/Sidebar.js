@@ -86,9 +86,9 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="w-64 border-r bg-muted">
-      <div className="p-4 font-semibold text-lg border-b">{data.quiz.title}</div> {/* Display quiz title */}
-      <div className="h-[calc(100vh-57px)]">
+    <div className="w-64 border-r bg-muted flex flex-col h-screen">
+      <div className="flex-grow overflow-auto">
+        <div className="p-4 font-semibold text-lg border-b">{data.quiz.title}</div>
         <nav className="p-2">
           {/* Display the current question */}
           <div className="p-2 rounded-md bg-primary text-primary-foreground">
@@ -131,47 +131,51 @@ const Sidebar = () => {
               </p>
             </div>
           )}
-        </nav>
 
-        {/* Chat bot for further clarification */}
-        <div className="ChatBot">
-          <h1>Still confused?</h1>
-          <form onSubmit={handleAsk}>
-            <textarea
-              value={ prompt}
-              onChange={(e) => setPrompt(e.target.value)}
-              placeholder="Ask away"
-              rows="4"
-              cols="50"
-            />
-            <br />
-            <button type="ask" disabled={loading}>
-              {loading ? 'Thinking...' : '_Ask_'}
-            </button>
-          </form>
-          {response && (
-            <div className="response">
-              <h2>Response:</h2>
-              <p>{response}</p>
-            </div>
-          )}
-        </div>
-
-        {/* Navigation buttons for previous and next */}
-        <div className="flex justify-between mt-4 px-2">
+          {/* Navigation buttons for previous and next */}
+          <div className="flex justify-between mt-4">
             <button
               onClick={handlePrevious}
               className="bg-gray-900 p-2 rounded-md text-white"
             >
               Previous
-            </button><button
+            </button>
+            <button
               onClick={handleNext}
               className="bg-gray-900 p-2 rounded-md text-white"
               disabled={!isAnswered || selectedOption !== questions[currentQuestionIndex].correctAnswer} // Disable if not answered correctly
             >
               Next
             </button>
-        </div>
+          </div>
+        </nav>
+      </div>
+
+      {/* Chatbot section with increased height */}
+      <div className="border-t p-2 bg-gray-100 h-1/3 flex flex-col">
+        <h2 className="font-semibold mb-2">Still confused?</h2>
+        <form onSubmit={handleAsk} className="flex flex-col flex-grow">
+          <textarea
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+            placeholder="Ask Omri..."
+            rows="3"
+            className="w-full p-1 mb-2 text-sm flex-grow"
+          />
+          <button 
+            type="submit" 
+            disabled={loading}
+            className="bg-blue-500 text-white p-2 rounded text-sm"
+          >
+            {loading ? 'Thinking...' : 'Ask'}
+          </button>
+        </form>
+        {response && (
+          <div className="mt-2 text-sm overflow-auto max-h-24">
+            <strong>Response:</strong>
+            <p>{response}</p>
+          </div>
+        )}
       </div>
     </div>
   );
