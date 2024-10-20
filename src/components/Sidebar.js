@@ -97,9 +97,9 @@ const Sidebar = ({setQuestion}) => {
   };
 
   return (
-    <div className="w-64 border-r bg-muted flex flex-col h-screen">
+    <div className="w-64 border-r bg-muted flex flex-col h-screen overflow-auto">
       <div className='border-b'>
-          <button onClick={handleButtonClick}><div className="text-4xl font-bold p-4">10k-cademy</div></button>
+          <button onClick={handleButtonClick}><div className="text-4xl font-bold p-4">10-Kademy</div></button>
       </div>
       <div className="p-4 font-semibold text-lg border-b">{data.quiz.title}</div> {/* Display quiz title */}
       <div className="h-[calc(100vh-57px)]">
