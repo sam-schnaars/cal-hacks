@@ -28,7 +28,7 @@ export default function Homepage() {
                 <div className="flex gap-2 mb-8">
                   <input
                     type="text"
-                    placeholder="Enter company symbol (e.g., AAPL)"
+                    placeholder="Enter company (e.g., AAPL)"
                     value={companySymbol}
                     onChange={(e) => setCompanySymbol(e.target.value)}
                     className="flex-grow border-2 rounded-lg p-1"
@@ -56,7 +56,7 @@ export default function Homepage() {
           By quizzing yourself with actual 10-K filings from public companies, 
           you build the reflexes necessary for deeper financial understanding
           —something you can’t rely on AI for during your accounting final. 
-          Just enter a stock symbol to get started.
+          Just enter a stock to get started.
         </p>
       </div>
     </div>
