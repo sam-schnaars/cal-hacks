@@ -1,6 +1,5 @@
 import React from 'react';
 import data from '../gbs.json';
-
 const BSTable = (question) => {
 
   const highlights = question.question.highlight ? question.question.highlight.flat(2) : "Inventory";
