@@ -1,10 +1,20 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
-import balanceSheetData from "../google_balance_sheet.json";
-import incomeData from "../google_income_statement.json";
-import cashFlowData from "../google_cash_flow.json";
 
-const ChatPanel = ({ currentQuestion }) => {
+// Import all JSON files
+import googleBS from "../jsons/gbs.json";
+import googleIS from "../jsons/gis.json";
+import googleCFS from "../jsons/gcfs.json";
+
+import appleBS from "../jsons/aapl-bs.json";
+import appleIS from "../jsons/aapl-is.json";
+import appleCFS from "../jsons/aapl-cfs.json";
+
+import nvidiaBS from "../jsons/nbs.json";
+import nvidiaIS from "../jsons/nis.json";
+import nvidiaCFS from "../jsons/ncfs.json";
+
+const ChatPanel = ({ currentQuestion, selectedCompany }) => {
   const [prompt, setPrompt] = useState('');
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -13,6 +23,12 @@ const ChatPanel = ({ currentQuestion }) => {
 
   const serverUrl = "https://calhacks-chatbot-868376672344.us-central1.run.app";
   const instructions = "The user is a student trying to study accounting. The user is trying to answer a real-world question about a company's 10K and the user needs your help in understanding the answer better. Here is the question, answer options and a one-line explanation the user was given. The user still couldn't understand despite the explanation. Hence, using the explanation as reference, the user needs your help in understanding this even better. Keep your answer simple, concise and related to the below question answer without adding outside info of your own.";
+
+  const companyData = {
+    GOOG: { bs: googleBS, is: googleIS, cfs: googleCFS },
+    AAPL: { bs: appleBS, is: appleIS, cfs: appleCFS },
+    NVDA: { bs: nvidiaBS, is: nvidiaIS, cfs: nvidiaCFS },
+  };
 
   useEffect(() => {
     scrollToBottom();
@@ -31,10 +47,14 @@ const ChatPanel = ({ currentQuestion }) => {
     
     try {
       const contextString = `${instructions}\nQuestion: ${currentQuestion.text}\nOptions: ${currentQuestion.options.map(option => option.text).join(', ')}\nExplanation: ${currentQuestion.explanation}\n\n`;
+      
+      // Get financial data based on the selected company
+      const { bs, is, cfs } = companyData[selectedCompany];
+
       const fullPrompt = `${contextString}User question: ${prompt}\n\n
-        Balance Sheet: ${JSON.stringify(balanceSheetData, null, 2)}
-        Income Statement: ${JSON.stringify(incomeData, null, 2)}
-        Cash Flow Statement: ${JSON.stringify(cashFlowData, null, 2)}`;
+        Balance Sheet: ${JSON.stringify(bs, null, 2)}
+        Income Statement: ${JSON.stringify(is, null, 2)}
+        Cash Flow Statement: ${JSON.stringify(cfs, null, 2)}`;
       
       const result = await axios.post(`${serverUrl}/chat`, { prompt: fullPrompt });
       setMessages(prevMessages => [...prevMessages, { type: 'bot', content: result.data.generated_text }]);

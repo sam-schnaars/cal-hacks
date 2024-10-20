@@ -11,8 +11,8 @@ const Sidebar = ({
   feedback,
   handleCheck,
   questions,
-  companyData
-}) => {
+  companyData,
+  selectedCompany}) => {
 
   const labels = ['A', 'B', 'C', 'D'];
   const [focusedOptionIndex, setFocusedOptionIndex] = useState(-1);
@@ -143,7 +143,7 @@ const Sidebar = ({
       </div>
     </div>
 
-    <ChatPanel currentQuestion={questions[currentQuestionIndex]} />
+    <ChatPanel currentQuestion={questions[currentQuestionIndex]} selectedCompany={selectedCompany} />
     </>
   );
 };

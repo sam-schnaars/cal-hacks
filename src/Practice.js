@@ -6,6 +6,7 @@ import Sidebar from "./components/Sidebar.js"
 import ISTable from './components/ISTable.js';
 import CFSTable from './components/CFSTable.js';
 import BSTable from './components/BSTable.js';
+import ChatPanel from './components/ChatPanel.js';
 
 // Import all JSON files
 import googleBS from "./jsons/gbs.json";
@@ -25,7 +26,7 @@ import nvidiaQuestions from "./questions/nvidia_quiz.json";
 
 function PracticeScreen() {
   const location = useLocation();
-  const selectedCompany = location.state?.company || 'GOOG';
+  const [selectedCompany, setSelectedCompany] = useState(location.state?.company || 'GOOG');
 
   const companyData = {
     GOOG: { bs: googleBS, is: googleIS, cfs: googleCFS, questions: googleQuestions },
@@ -143,7 +144,11 @@ function PracticeScreen() {
           feedback={feedback}
           handleCheck={handleCheck}
           questions={questions.quiz.questions}
-          companyData={{ bs, is, cfs, ticker: questions.quiz.ticker, title: questions.quiz.title }}
+          companyData={{
+            bs, is, cfs, ticker: questions.quiz.ticker, title: questions.quiz.title
+          }}
+          selectedCompany={selectedCompany}
+          setSelectedCompany={setSelectedCompany}
         />
         <div className="flex-1 flex flex-col overflow-auto">
           <main className="flex-1 p-6">
