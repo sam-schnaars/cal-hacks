@@ -13,6 +13,7 @@ import PracticeScreen from './Practice.js';
 
 function App() {
 
+  // are these necessary anymore @sam?
   const questions = [
     "What is the value of the companies assets?",
     "What is the value of the companies liabilites?",
