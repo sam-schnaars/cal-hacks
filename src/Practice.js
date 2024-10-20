@@ -8,9 +8,9 @@ import BalanceSheetTable from './components/BalanceSheetTable.js';
 import Sidebar from "./components/Sidebar.js"
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BSTable from './components/BSTable.js';
 import ISTable from './components/ISTable.js';
 import CFSTable from './components/CFSTable.js';
+import BSTable from './components/BSTable.js';
 
 function PracticeScreen() {
 
@@ -30,14 +30,13 @@ function PracticeScreen() {
   };
 
   return (
-    <div className='flex-col'>
-      <div className="flex h-screen bg-background text-foreground">
+    <div className='flex flex-col h-screen'>
+      <div className="flex flex-1 overflow-hidden">
         {/* Sidebar */}
         <Sidebar />
         {/* Main Content */}
-
-        <div className="flex-1 flex flex-col">
-          <main className="flex-1 p-6 overflow-auto">
+        <div className="flex-1 flex flex-col overflow-auto">
+          <main className="flex-1 p-6">
             <div className="flex flex-row space-x-4">
               <div className="flex-1">
                 <BSTable />
@@ -48,17 +47,20 @@ function PracticeScreen() {
               </div>
             </div>
           </main>
+        </div>
+      </div>
 
-          {/* Bottom Right Buttons */}
-          <div className="p-4 flex justify-end gap-4">
-            <button>IDK</button>
-            <button>Next</button>
+      {/* Footer */}
+      <div className="w-full bg-background border-t border-gray-200">
+        <div className="flex justify-between items-center px-4 py-3">
+          <button className="bg-gray-300 text-black font-bold border border-black rounded-lg px-4 py-2">Back</button>
+          <div className="flex gap-4">
+            <button className="bg-gray-300 text-black font-bold border border-black rounded-lg px-4 py-2">Idk</button>
+            <button className="bg-gray-800 text-white font-bold border border-black rounded-lg px-4 py-2">Next</button>
           </div>
         </div>
       </div>
     </div>
-
-
   );
 }
 
