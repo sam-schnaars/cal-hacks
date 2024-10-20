@@ -4,6 +4,9 @@ import LiabilitiesTable from './components/LiabilitiesTable.js';
 import IncomeAndCashFlowTable from './components/IncomeAndCashFlowTable.js';
 import BalanceSheetTable from './components/BalanceSheetTable.js';
 import Sidebar from "./components/Sidebar.js"
+import BSTable from './components/BSTable.js';
+import ISTable from './components/ISTable.js';
+import CFSTable from './components/CFSTable.js';
 
 function App() {
 
@@ -21,8 +24,13 @@ function App() {
       <div className="flex-1 flex flex-col">
         <main className="flex-1 p-6 overflow-auto">
           <div className="flex flex-row space-x-4">
-            <div className="flex-1"><BalanceSheetTable/></div>
-            <div className="flex-1"><IncomeAndCashFlowTable/></div>
+            <div className="flex-1">
+              <BSTable/>
+            </div>
+            <div className="flex-1 flex flex-col space-y-4">
+              <ISTable/>
+              <CFSTable/>
+            </div>
           </div>
         </main>
 

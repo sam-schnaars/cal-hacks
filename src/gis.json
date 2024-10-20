@@ -1,0 +1,72 @@
+{
+    "Revenues": {
+      "2021": 257637,
+      "2022": 282836,
+      "2023": 307394
+    },
+    "Costs and expenses": {
+      "2021": null,
+      "2022": null,
+      "2023": null
+    },
+    "Cost of revenues": {
+      "2021": 110939,
+      "2022": 126203,
+      "2023": 133332
+    },
+    "Research and development": {
+      "2021": 31562,
+      "2022": 39500,
+      "2023": 45427
+    },
+    "Sales and marketing": {
+      "2021": 22912,
+      "2022": 26567,
+      "2023": 27917
+    },
+    "General and administrative": {
+      "2021": 13510,
+      "2022": 15724,
+      "2023": 16425
+    },
+    "Total costs and expenses": {
+      "2021": 178923,
+      "2022": 207994,
+      "2023": 223101
+    },
+    "Income from operations": {
+      "2021": 78714,
+      "2022": 74842,
+      "2023": 84293
+    },
+    "Other income (expense), net": {
+      "2021": 12020,
+      "2022": -3514,
+      "2023": 1424
+    },
+    "Income before income taxes": {
+      "2021": 90734,
+      "2022": 71328,
+      "2023": 85717
+    },
+    "Provision for income taxes": {
+      "2021": 14701,
+      "2022": 11356,
+      "2023": 11922
+    },
+    "Net income": {
+      "2021": 76033,
+      "2022": 59972,
+      "2023": 73795
+    },
+    "Basic net income per share of Class A, Class B, and Class C stock": {
+      "2021": 5.69,
+      "2022": 4.59,
+      "2023": 5.84
+    },
+    "Diluted net income per share of Class A, Class B, and Class C stock": {
+      "2021": 5.61,
+      "2022": 4.56,
+      "2023": 5.80
+    }
+  }
