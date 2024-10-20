@@ -1,7 +1,12 @@
 import React from 'react';
 import data from '../gcfs.json';
+const CFSTable = (question) => {
 
-const CFSTable = () => {
+  const highlights = question.question.highlight ? question.question.highlight.flat(2) : "Inventory";
+
+  const isHighlighted = (subcategory) => {
+    return highlights.includes(subcategory);
+  };
   const formatNumber = (num) => {
     if (num === null || num === undefined) return '';
     const absNum = Math.abs(num);
@@ -13,8 +18,8 @@ const CFSTable = () => {
     return Object.entries(data).map(([key, value], index) => (
       <tr key={key} className={index % 2 === 0 ? 'bg-blue-100' : ''}>
         <td className="px-1 py-0.5 text-left text-xs">{key}</td>
-        <td className="px-1 py-0.5 text-right text-xs">{formatNumber(value['2022'])}</td>
-        <td className="px-1 py-0.5 text-right text-xs">{formatNumber(value['2023'])}</td>
+        <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-yellow-300' : ''}`}>{formatNumber(value['2022'])}</td>
+        <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-yellow-300' : ''}`}>{formatNumber(value['2023'])}</td>
       </tr>
     ));
   };

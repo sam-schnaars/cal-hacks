@@ -1,14 +1,46 @@
-import React from 'react';
-import data from "../google_questions.json";
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import balanceSheetData from "../google_balance_sheet.json";
+import incomeData from "../google_income_statement.json";
+import cashFlowData from "../google_cash_flow.json";
+import data from "../google_questions.json";
 
 const Sidebar = ({ currentQuestionIndex, handleOptionSelect, selectedOption, isAnswered, feedback }) => {
   const questions = data.quiz.questions;
+
 
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
     navigate('/');
+  };
+
+  // Chat bot for further clarification
+  const [prompt, setPrompt] = useState('');
+  const [response, setResponse] = useState('');
+  const [loading, setLoading] = useState(false);
+  const instructions = "The user is a student trying to study accounting. The user is trying to answer a real-world question about a company's 10K and the user needs your help in understanding the answer better. Here is the question, answer options and a one-line explanation the user was given. The user still couldn't understand despite the explanation. Hence, using the explanation as reference, the user needs your help in understanding this even better. Keep your answer simple, concise and related to the below question answer without adding outside info of your own.";
+
+  const handleAsk = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const currentQuestion = questions[currentQuestionIndex];
+      const contextString = `${instructions}\nQuestion: ${currentQuestion.text}\nOptions: ${currentQuestion.options.map(option => option.text).join(', ')}\nExplanation: ${currentQuestion.explanation}\n\n`;
+      const fullPrompt = `${contextString}User question: ${prompt}\n\n
+        Balance Sheet: ${JSON.stringify(balanceSheetData, null, 2)}
+        Income Statement: ${JSON.stringify(incomeData, null, 2)}
+        Cash Flow Statement: ${JSON.stringify(cashFlowData, null, 2)}`
+      ;
+      
+      const result = await axios.post('http://localhost:3001/chat', { prompt: fullPrompt });
+      setResponse(result.data.generated_text);
+    } catch (error) {
+      console.error('Error:', error);
+      setResponse('An error occurred while fetching the answer');
+    }
+    setLoading(false);
   };
 
   return (
@@ -67,7 +99,35 @@ const Sidebar = ({ currentQuestionIndex, handleOptionSelect, selectedOption, isA
               </p>
             </div>
           )}
+
         </nav>
+
+      {/* Chatbot section with increased height */}
+      <div className="border-t p-2 bg-gray-100 h-1/3 flex flex-col">
+        <h2 className="font-semibold mb-2">Still confused?</h2>
+        <form onSubmit={handleAsk} className="flex flex-col flex-grow">
+          <textarea
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+            placeholder="Ask Omri..."
+            rows="3"
+            className="w-full p-1 mb-2 text-sm flex-grow"
+          />
+          <button 
+            type="submit" 
+            disabled={loading}
+            className="bg-blue-500 text-white p-2 rounded text-sm"
+          >
+            {loading ? 'Thinking...' : 'Ask'}
+          </button>
+        </form>
+        {response && (
+          <div className="mt-2 text-sm overflow-auto max-h-24">
+            <strong>Response:</strong>
+            <p>{response}</p>
+          </div>
+        )}
+
       </div>
     </div>
   );
