@@ -1,12 +1,11 @@
 import React from 'react';
 import data from '../gis.json';
 
-const ISTable = (question) => {
+const ISTable = ({ question, isAnswered }) => {
+  const highlights = question && question.highlight ? question.highlight.flat(2) : ["Inventory"];
 
-  const highlights = question.question.highlight ? question.question.highlight.flat(2) : "Inventory";
-
-  const isHighlighted = (subcategory) => {
-    return highlights.includes(subcategory);
+  const isHighlighted = (key) => {
+    return isAnswered && highlights.some(highlight => key.toLowerCase().includes(highlight.toLowerCase()));
   };
   const formatNumber = (num) => {
     if (num === null || num === undefined) return '';
@@ -17,11 +16,11 @@ const ISTable = (question) => {
 
   const renderRows = () => {
     return Object.entries(data).map(([key, value], index) => (
-      <tr key={key} className={index % 2 === 0 ? 'bg-blue-100' : ''}>
+      <tr key={key} className={`${index % 2 === 0 ? 'bg-blue-100' : ''} ${isHighlighted(key) ? 'bg-green-300' : ''}`}>
         <td className="px-1 py-0.5 text-left text-xs">{key}</td>
-        <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-yellow-300' : ''}`}>{formatNumber(value['2021'])}</td>
-        <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-yellow-300' : ''}`}>{formatNumber(value['2022'])}</td>
-        <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-yellow-300' : ''}`}>{formatNumber(value['2023'])}</td>
+        <td className="px-1 py-0.5 text-right text-xs">{formatNumber(value['2021'])}</td>
+        <td className="px-1 py-0.5 text-right text-xs">{formatNumber(value['2022'])}</td>
+        <td className="px-1 py-0.5 text-right text-xs">{formatNumber(value['2023'])}</td>
       </tr>
     ));
   };
