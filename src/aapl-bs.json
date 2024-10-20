@@ -1,0 +1,142 @@
+{
+    "Assets": {
+      "2022": null,
+      "2023": null
+    },
+    "Current assets": {
+      "2022": null,
+      "2023": null
+    },
+    "Cash and cash equivalents": {
+      "2022": 23965,
+      "2023": 23646
+    },
+    "Marketable securities": {
+      "2022": 31590,
+      "2023": 24658
+    },
+    "Accounts receivable, net": {
+      "2022": 29508,
+      "2023": 28184
+    },
+    "Vendor non-trade receivables": {
+      "2022": 31477,
+      "2023": 32748
+    },
+    "Inventories": {
+      "2022": 6331,
+      "2023": 4946
+    },
+    "Other current assets": {
+      "2022": 14695,
+      "2023": 21223
+    },
+    "Total current assets": {
+      "2022": 143566,
+      "2023": 135405
+    },
+    "Non-current assets": {
+      "2022": null,
+      "2023": null
+    },
+    "Marketable securities (non-current)": {
+      "2022": 100544,
+      "2023": 120805
+    },
+    "Property, plant and equipment, net": {
+      "2022": 43715,
+      "2023": 42117
+    },
+    "Other non-current assets": {
+      "2022": 64758,
+      "2023": 54428
+    },
+    "Total non-current assets": {
+      "2022": 209017,
+      "2023": 217350
+    },
+    "Total assets": {
+      "2022": 352583,
+      "2023": 352755
+    },
+    "Liabilities and Shareholders' Equity": {
+      "2022": null,
+      "2023": null
+    },
+    "Current liabilities": {
+      "2022": null,
+      "2023": null
+    },
+    "Accounts payable": {
+      "2022": 62611,
+      "2023": 64115
+    },
+    "Other current liabilities": {
+      "2022": 58829,
+      "2023": 60845
+    },
+    "Deferred revenue": {
+      "2022": 8061,
+      "2023": 7912
+    },
+    "Commercial paper": {
+      "2022": 5985,
+      "2023": 9982
+    },
+    "Term debt (current)": {
+      "2022": 9822,
+      "2023": 11128
+    },
+    "Total current liabilities": {
+      "2022": 145308,
+      "2023": 153982
+    },
+    "Non-current liabilities": {
+      "2022": null,
+      "2023": null
+    },
+    "Term debt (non-current)": {
+      "2022": 95281,
+      "2023": 98959
+    },
+    "Other non-current liabilities": {
+      "2022": 49848,
+      "2023": 49142
+    },
+    "Total non-current liabilities": {
+      "2022": 145129,
+      "2023": 148101
+    },
+    "Total liabilities": {
+      "2022": 290437,
+      "2023": 302083
+    },
+    "Commitments and contingencies": {
+      "2022": null,
+      "2023": null
+    },
+    "Shareholders' equity": {
+      "2022": null,
+      "2023": null
+    },
+    "Common stock and additional paid-in capital": {
+      "2022": 73812,
+      "2023": 64849
+    },
+    "Accumulated deficit": {
+      "2022": -214,
+      "2023": -3068
+    },
+    "Accumulated other comprehensive loss": {
+      "2022": -11452,
+      "2023": -11109
+    },
+    "Total shareholders' equity": {
+      "2022": 62146,
+      "2023": 50672
+    },
+    "Total liabilities and shareholders' equity": {
+      "2022": 352583,
+      "2023": 352755
+    }
+  }

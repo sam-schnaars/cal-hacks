@@ -2,21 +2,38 @@ import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import companiesData from './companies_mapping.json'; // Update the path accordingly
 
+interface Company {
+  symbol: string;
+  name: string;
+  cik: number; // Add cik to the Company interface
+}
+
 export default function Homepage() {
   // Create an array of companies from the JSON data
-  const companies = Object.entries(companiesData).map(([symbol, { name }]) => ({
+  const companies = Object.entries(companiesData).map(([symbol, { name, cik }]: [string, { name: string; cik: number }]) => ({
     symbol,
     name,
+    cik,
   }));
 
-  const [companySymbol, setCompanySymbol] = React.useState("");
-  const [suggestions, setSuggestions] = React.useState<{ symbol: string; name: string }[]>([]);
-  const [showSuggestions, setShowSuggestions] = React.useState(false);
+  const [companySymbol, setCompanySymbol] = React.useState<string>("");
+  const [suggestions, setSuggestions] = React.useState<Company[]>([]);
+  const [showSuggestions, setShowSuggestions] = React.useState<boolean>(false);
+
+  const navigate = useNavigate();
 
   const handleCompanySearch = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(`Searching for company: ${companySymbol}`);
-    setShowSuggestions(false); // Hide suggestions on submit
+    setShowSuggestions(false);
+    
+    // Find the selected company object from suggestions to get the CIK
+    const selectedCompany = suggestions.find(company => company.symbol === companySymbol);
+    if (selectedCompany) {
+      navigate(`/practice/${selectedCompany.symbol}/${selectedCompany.cik}`); // Navigate with the symbol and CIK
+    } else {
+      alert("Please select a valid company.");
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -42,12 +59,6 @@ export default function Homepage() {
     setShowSuggestions(false);
   };
 
-  const navigate = useNavigate();
-
-  const handleButtonClick = () => {
-    navigate('/practice');
-  };
-
   return (
     <div className="min-h-screen bg-background text-foreground flex">
       {/* Master Accounting Section (66%) */}
@@ -66,12 +77,17 @@ export default function Homepage() {
                     onChange={handleInputChange}
                     className="flex-grow border-2 rounded-lg p-1"
                   />
+<<<<<<< Updated upstream
                   <button
                     type="submit"
                     onClick={handleButtonClick}
                     className="bg-gray-800 text-white font-bold border border-black rounded-lg px-4 py-2 hover:bg-gray-700 transition-colors duration-300"
                   >
                     Practice
+=======
+                  <button type="submit" className="border-2 rounded-lg p-1">
+                    Search
+>>>>>>> Stashed changes
                   </button>
                 </div>
                 {/* Suggestions Dropdown */}

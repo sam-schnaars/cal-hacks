@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import data from "../google_questions.json";
 import ChatPanel from './ChatPanel';
+import mappings from "../companies_mapping.json";
 
+<<<<<<< Updated upstream
 const Sidebar = ({ 
   currentQuestionIndex, 
   handleOptionSelect, 
@@ -12,6 +14,9 @@ const Sidebar = ({
   feedback,
   handleCheck // Add this prop
 }) => {
+=======
+const Sidebar = ({ currentQuestionIndex, handleOptionSelect, selectedOption, isAnswered, feedback, companyInfo }) => {
+>>>>>>> Stashed changes
   const questions = data.quiz.questions;
   const labels = ['A', 'B', 'C', 'D'];
   const [focusedOptionIndex, setFocusedOptionIndex] = useState(-1);
@@ -75,8 +80,8 @@ const Sidebar = ({
         </div>
         <div className="p-4 font-semibold text-lg border-b">
           <div className="flex items-center">
-            <strong>{data.quiz.ticker}</strong>:&nbsp;
-            {data.quiz.title}&nbsp;
+            <strong>{companyInfo.symbol}</strong>:&nbsp;
+            {mappings[companyInfo.symbol].name}&nbsp;
             <button onClick={handleButtonClick} className="inline-flex items-center justify-center transition-colors duration-200">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />

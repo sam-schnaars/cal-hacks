@@ -1,0 +1,46 @@
+{
+    "quiz": {
+        "ticker": "GOOG",
+        "title": "Alphabet, Inc.",
+        "questions": [
+            {
+                "question_id": 1,
+                "text": "What was Alphabet's total revenue for the year ended December 31, 2023?",
+                "options": [
+                    {"id": "a", "text": "$282,836 million"},
+                    {"id": "b", "text": "$283,474 million"},
+                    {"id": "c", "text": "$307,394 million"},
+                    {"id": "d", "text": "$283,836 million"}
+                ],
+                "correctAnswer": "c",
+                "explanation": "According to the income statement, Alphabet's total revenue for 2023 was $307,394 million.",
+                "highlight": [["Revenues"]]
+            },
+            {
+                "question_id": 2,
+                "text": "What was the year-over-year revenue growth rate from 2022 to 2023?",
+                "options": [
+                    {"id": "a", "text": "6%"},
+                    {"id": "b", "text": "9%"},
+                    {"id": "c", "text": "10%"},
+                    {"id": "d", "text": "12%"}
+                ],
+                "correctAnswer": "a",
+                "explanation": "Revenue growth rate = (2023 revenue - 2022 revenue) / 2022 revenue = (282,474 - 265,696) / 265,696 = 6%",
+                "highlight": [["Revenues"]]
+            },
+            {
+                "question_id": 3,
+                "text": "What was Alphabet's gross profit margin for 2023?",
+                "options": [
+                    {"id": "a", "text": "54%"},
+                    {"id": "b", "text": "55%"},
+                    {"id": "c", "text": "56%"},
+                    {"id": "d", "text": "57%"}
+                ],
+                "correctAnswer": "b",
+                "explanation": "Gross profit margin = (Total revenues - Cost of revenues) / Total revenues = (282,474 - 126,203) / 282,474 = 55%",
+                "highlight": [["Revenues", "Cost of revenues"]]
+            }]
+    }
+}

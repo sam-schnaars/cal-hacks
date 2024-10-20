@@ -1,8 +1,18 @@
 import React from 'react';
+<<<<<<< Updated upstream
 import data from '../gbs.json';
 
 const BSTable = ({ question, isAnswered }) => {
   const highlights = question && question.highlight ? question.highlight.flat(2) : ["Inventory"];
+=======
+import bs_data from "../gbs.json";
+
+const BSTable = (question) => {
+
+  const highlights = (question && question.question && question.question.highlight) 
+    ? question.question.highlight.flat(2) 
+    : ["Inventory"];
+>>>>>>> Stashed changes
 
   const isHighlighted = (key) => {
     return isAnswered && highlights.some(highlight => key.toLowerCase().includes(highlight.toLowerCase()));
@@ -16,11 +26,17 @@ const BSTable = ({ question, isAnswered }) => {
   };
 
   const renderRows = () => {
-    return Object.entries(data).map(([key, value], index) => (
+    return Object.entries(bs_data).map(([key, value], index) => (
       <tr key={key} className={index % 2 === 0 ? 'bg-blue-100' : ''}>
+<<<<<<< Updated upstream
         <td className={`px-1 py-0.5 text-left text-xs ${isHighlighted(key) ? 'bg-green-300' : ''}`}>{key}</td>
         <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-green-300' : ''}`}>{formatNumber(value['2022'])}</td>
         <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-green-300' : ''}`}>{formatNumber(value['2023'])}</td>
+=======
+        <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-yellow-300' : ''}`}>{key}</td>
+        <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-yellow-300' : ''}`}>{formatNumber(value['2022'])}</td>
+        <td className={`px-1 py-0.5 text-right text-xs ${isHighlighted(key) ? 'bg-yellow-300' : ''}`}>{formatNumber(value['2023'])}</td>
+>>>>>>> Stashed changes
       </tr>
     ));
   };
