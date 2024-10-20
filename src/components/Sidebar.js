@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import balanceSheetData from "../google_balance_sheet.json";
-import incomeData from "../google_income_statement.json";
-import cashFlowData from "../google_cash_flow.json";
-import data from "../google_questions.json";
 
 const Sidebar = ({ 
   currentQuestionIndex, 
@@ -13,9 +9,10 @@ const Sidebar = ({
   selectedOption, 
   isAnswered, 
   feedback,
-  handleCheck // Add this prop
+  handleCheck,
+  questions,
+  companyData
 }) => {
-  const questions = data.quiz.questions;
   const labels = ['A', 'B', 'C', 'D'];
   const [focusedOptionIndex, setFocusedOptionIndex] = useState(-1);
 
@@ -83,10 +80,9 @@ const Sidebar = ({
       const currentQuestion = questions[currentQuestionIndex];
       const contextString = `${instructions}\nQuestion: ${currentQuestion.text}\nOptions: ${currentQuestion.options.map(option => option.text).join(', ')}\nExplanation: ${currentQuestion.explanation}\n\n`;
       const fullPrompt = `${contextString}User question: ${prompt}\n\n
-        Balance Sheet: ${JSON.stringify(balanceSheetData, null, 2)}
-        Income Statement: ${JSON.stringify(incomeData, null, 2)}
-        Cash Flow Statement: ${JSON.stringify(cashFlowData, null, 2)}`
-      ;
+        Balance Sheet: ${JSON.stringify(companyData.bs, null, 2)}
+        Income Statement: ${JSON.stringify(companyData.is, null, 2)}
+        Cash Flow Statement: ${JSON.stringify(companyData.cfs, null, 2)}`;
       
       const result = await axios.post('http://localhost:3001/chat', { prompt: fullPrompt });
       setResponse(result.data.generated_text);
@@ -99,18 +95,28 @@ const Sidebar = ({
 
   return (
     <div className="w-64 border-r bg-muted">
-      <div className='border-b'>
-        <button onClick={handleButtonClick}><div className="text-4xl font-bold p-4">10-Kademy</div></button>
+      <div className='border-b flex justify-center'>
+        <button onClick={handleButtonClick}>
+          <div className="text-3xl font-bold p-4">
+            10-Kademy<sub className="text-sm text-gray-500">beta</sub>
+          </div>
+        </button>
       </div>
       <div className="p-4 font-semibold text-lg border-b">
         <div className="flex items-center">
-          <strong>{data.quiz.ticker}</strong>:&nbsp;
-          {data.quiz.title}&nbsp;
-          <button onClick={handleButtonClick} className="inline-flex items-center justify-center transition-colors duration-200">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-            </svg>
-          </button>
+          <select
+            value={companyData.ticker}
+            onChange={(e) => {
+              const newCompany = e.target.value;
+              navigate('/practice', { state: { company: newCompany } });
+            }}
+            className="flex-grow border-2 rounded-lg p-1 mr-2"
+            aria-label="Select a company"
+          >
+            <option value="GOOG">GOOG</option>
+            <option value="AAPL">AAPL</option>
+            <option value="NVDA">NVDA</option>
+          </select>
         </div>
       </div>
       <div className="h-[calc(100vh-57px)]">

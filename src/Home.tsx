@@ -1,8 +1,9 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import companiesData from './companies_mapping.json'; // Update the path accordingly
+import PracticeScreen from './Practice';
 
-export default function Homepage() {
+export default function Home() {
   // Create an array of companies from the JSON data
   const companies = Object.entries(companiesData).map(([symbol, { name }]) => ({
     symbol,
@@ -28,7 +29,7 @@ export default function Homepage() {
           <div>
             <h1 className="text-8xl font-bold mb-4 text-left pb-2">10-Kademy</h1>
             <div className="container px-4">
-              <h2 className="text-lg text-left mb-8">Interactive accounting practice with 10-Ks from every public company <span className="text-gray-500 ml-2">(coming soon)</span></h2>
+              <h2 className="text-lg text-left mb-8">Interactive accounting practice with 10-Ks from every public company <span className="text-gray-300 ml-1">(coming soon)</span></h2>
               <div className="max-w-md relative">
                 <div className="flex gap-2 mb-2">
                   <select
