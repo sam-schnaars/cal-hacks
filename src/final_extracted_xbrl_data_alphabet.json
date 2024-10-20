@@ -1,0 +1,904 @@
+{
+    "balance_sheet": [
+        {
+            "2022": 8561.0,
+            "2023": 12509.0,
+            "label": "Cash",
+            "line": 36,
+            "indentation": "80px"
+        },
+        {
+            "2022": 21879.0,
+            "2023": 24048.0,
+            "label": "Cash and Cash Equivalents, at Carrying Value, Total",
+            "line": 38,
+            "indentation": "80px"
+        },
+        {
+            "2022": 5156.0,
+            "2023": 5973.0,
+            "label": "Equity Securities, FV-NI, Current",
+            "line": 48,
+            "indentation": "80px"
+        },
+        {
+            "2022": 91883.0,
+            "2023": 86868.0,
+            "label": "Marketable Securities, Current",
+            "line": 54,
+            "indentation": "80px"
+        },
+        {
+            "2022": 113762.0,
+            "2023": 110916.0,
+            "label": "Cash, Cash Equivalents, and Short-Term Investments, Total",
+            "line": 57,
+            "indentation": "70px"
+        },
+        {
+            "2022": 40258.0,
+            "2023": 47964.0,
+            "label": "Accounts Receivable, after Allowance for Credit Loss, Current, Total",
+            "line": 63,
+            "indentation": "90px"
+        },
+        {
+            "2022": 10775.0,
+            "2023": 12650.0,
+            "label": "Other Assets, Current",
+            "line": 98,
+            "indentation": "60px"
+        },
+        {
+            "2022": 164795.0,
+            "2023": 171530.0,
+            "label": "Assets, Current, Total",
+            "line": 138,
+            "indentation": "60px"
+        },
+        {
+            "2022": 14381.0,
+            "2023": 14091.0,
+            "label": "Operating Lease, Right-of-Use Asset",
+            "line": 145,
+            "indentation": "60px"
+        },
+        {
+            "2022": 66897.0,
+            "2023": 74083.0,
+            "label": "Property, Plant and Equipment, Gross, Total",
+            "line": 162,
+            "indentation": "80px"
+        },
+        {
+            "2022": 59042.0,
+            "2023": 67458.0,
+            "label": "Accumulated Depreciation, Depletion and Amortization, Property, Plant, and Equipment",
+            "line": 163,
+            "indentation": "70px"
+        },
+        {
+            "2022": 112668.0,
+            "2023": 134345.0,
+            "label": "Property, Plant and Equipment, Net, Total",
+            "line": 164,
+            "indentation": "70px"
+        },
+        {
+            "2022": 1.5,
+            "2023": 1.7,
+            "label": "Equity Method Investments",
+            "line": 170,
+            "indentation": "90px"
+        },
+        {
+            "2022": 803.0,
+            "2023": 1.4,
+            "label": "Marketable Securities, Noncurrent",
+            "line": 177,
+            "indentation": "80px"
+        },
+        {
+            "2022": 30492.0,
+            "2023": 31008.0,
+            "label": "Other Long-Term Investments",
+            "line": 180,
+            "indentation": "80px"
+        },
+        {
+            "2022": 28960.0,
+            "2023": 29198.0,
+            "label": "Goodwill",
+            "line": 196,
+            "indentation": "60px"
+        },
+        {
+            "2022": 8707.0,
+            "2023": 10051.0,
+            "label": "Other Assets, Noncurrent",
+            "line": 213,
+            "indentation": "60px"
+        },
+        {
+            "2022": 5261.0,
+            "2023": 12169.0,
+            "label": "Deferred Income Tax Assets, Net",
+            "line": 239,
+            "indentation": "60px"
+        },
+        {
+            "2022": 365264.0,
+            "2023": 402392.0,
+            "label": "Assets, Total",
+            "line": 263,
+            "indentation": "50px"
+        },
+        {
+            "2022": 5128.0,
+            "2023": 7493.0,
+            "label": "Accounts Payable, Current",
+            "line": 268,
+            "indentation": "80px"
+        },
+        {
+            "2022": 37866.0,
+            "2023": 46168.0,
+            "label": "Accrued Liabilities, Current, Total",
+            "line": 269,
+            "indentation": "80px"
+        },
+        {
+            "2022": 14028.0,
+            "2023": 15140.0,
+            "label": "Employee-related Liabilities, Current",
+            "line": 270,
+            "indentation": "80px"
+        },
+        {
+            "2022": 1632.0,
+            "2023": 2748.0,
+            "label": "Accrued Income Taxes, Current",
+            "line": 272,
+            "indentation": "90px"
+        },
+        {
+            "2022": 3908.0,
+            "2023": 4137.0,
+            "label": "Contract with Customer, Liability, Current",
+            "line": 280,
+            "indentation": "80px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Commercial Paper",
+            "line": 286,
+            "indentation": "90px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Line of Credit, Current",
+            "line": 306,
+            "indentation": "100px"
+        },
+        {
+            "2022": 0.0,
+            "2023": 1000.0,
+            "label": "Long-Term Debt, Current Maturities, Total",
+            "line": 323,
+            "indentation": "100px"
+        },
+        {
+            "2022": 298.0,
+            "2023": 363.0,
+            "label": "Finance Lease, Liability, Current",
+            "line": 324,
+            "indentation": "90px"
+        },
+        {
+            "2022": 69300.0,
+            "2023": 81814.0,
+            "label": "Liabilities, Current, Total",
+            "line": 358,
+            "indentation": "70px"
+        },
+        {
+            "2022": 12501.0,
+            "2023": 12460.0,
+            "label": "Operating Lease, Liability, Noncurrent",
+            "line": 392,
+            "indentation": "80px"
+        },
+        {
+            "2022": 14701.0,
+            "2023": 13253.0,
+            "label": "Long-Term Debt and Lease Obligation, Total",
+            "line": 393,
+            "indentation": "80px"
+        },
+        {
+            "2022": 599.0,
+            "2023": 911.0,
+            "label": "Contract with Customer, Liability, Noncurrent",
+            "line": 397,
+            "indentation": "90px"
+        },
+        {
+            "2022": 514.0,
+            "2023": 485.0,
+            "label": "Deferred Income Tax Liabilities, Net",
+            "line": 421,
+            "indentation": "80px"
+        },
+        {
+            "2022": 2247.0,
+            "2023": 1616.0,
+            "label": "Other Liabilities, Noncurrent",
+            "line": 437,
+            "indentation": "80px"
+        },
+        {
+            "2022": 109120.0,
+            "2023": 119013.0,
+            "label": "Liabilities, Total",
+            "line": 442,
+            "indentation": "60px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Commitments and Contingencies",
+            "line": 443,
+            "indentation": "50px"
+        },
+        {
+            "2022": 7603.0,
+            "2023": 4402.0,
+            "label": "Accumulated Other Comprehensive Income (Loss), Net of Tax",
+            "line": 495,
+            "indentation": "80px"
+        },
+        {
+            "2022": 195563.0,
+            "2023": 211247.0,
+            "label": "Retained Earnings (Accumulated Deficit)",
+            "line": 499,
+            "indentation": "80px"
+        },
+        {
+            "2022": 256144.0,
+            "2023": 283379.0,
+            "label": "Equity, Attributable to Parent, Total",
+            "line": 505,
+            "indentation": "70px"
+        },
+        {
+            "2022": 0.001,
+            "2023": 0.001,
+            "label": "Preferred Stock, Par or Stated Value Per Share",
+            "line": 510,
+            "indentation": "70px"
+        },
+        {
+            "2022": 100.0,
+            "2023": 100.0,
+            "label": "Preferred Stock, Shares Authorized",
+            "line": 514,
+            "indentation": "70px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Preferred Stock, Shares Issued",
+            "line": 516,
+            "indentation": "70px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Preferred Stock, Shares Outstanding",
+            "line": 517,
+            "indentation": "70px"
+        },
+        {
+            "2022": 0.001,
+            "2023": 0.001,
+            "label": "Common Stock, Par or Stated Value Per Share",
+            "line": 525,
+            "indentation": "70px"
+        },
+        {
+            "2022": 300000.0,
+            "2023": 300000.0,
+            "label": "Common Stock, Shares Authorized",
+            "line": 529,
+            "indentation": "70px"
+        },
+        {
+            "2022": 12849.0,
+            "2023": 12460.0,
+            "label": "Common Stock, Shares, Issued",
+            "line": 531,
+            "indentation": "70px"
+        },
+        {
+            "2022": 12849.0,
+            "2023": 12460.0,
+            "label": "Common Stock, Shares, Outstanding",
+            "line": 532,
+            "indentation": "70px"
+        },
+        {
+            "2022": 7603.0,
+            "2023": 4402.0,
+            "label": "Accumulated Other Comprehensive Income (Loss), Net of Tax",
+            "line": 567,
+            "indentation": "80px"
+        },
+        {
+            "2022": 195563.0,
+            "2023": 211247.0,
+            "label": "Retained Earnings (Accumulated Deficit)",
+            "line": 568,
+            "indentation": "70px"
+        },
+        {
+            "2022": 195563.0,
+            "2023": 211247.0,
+            "label": "Retained Earnings (Accumulated Deficit)",
+            "line": 601,
+            "indentation": "80px"
+        },
+        {
+            "2022": 7603.0,
+            "2023": 4402.0,
+            "label": "Accumulated Other Comprehensive Income (Loss), Net of Tax",
+            "line": 602,
+            "indentation": "80px"
+        },
+        {
+            "2022": 365264.0,
+            "2023": 402392.0,
+            "label": "Liabilities and Equity, Total",
+            "line": 607,
+            "indentation": "50px"
+        }
+    ],
+    "income_statement": [
+        {
+            "2022": 126203.0,
+            "2023": 133332.0,
+            "label": "Cost of Revenue, Total",
+            "line": 70,
+            "indentation": "130px"
+        },
+        {
+            "2022": 39500.0,
+            "2023": 45427.0,
+            "label": "Research and Development Expense, Total",
+            "line": 78,
+            "indentation": "150px"
+        },
+        {
+            "2022": null,
+            "2023": 2.1,
+            "label": "Restructuring Charges, Total",
+            "line": 107,
+            "indentation": "160px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Goodwill, Impairment Loss",
+            "line": 117,
+            "indentation": "160px"
+        },
+        {
+            "2022": 9.2,
+            "2023": 8.7,
+            "label": "Marketing and Advertising Expense, Total",
+            "line": 160,
+            "indentation": "160px"
+        },
+        {
+            "2022": 26567.0,
+            "2023": 27917.0,
+            "label": "Selling and Marketing Expense, Total",
+            "line": 167,
+            "indentation": "150px"
+        },
+        {
+            "2022": 15724.0,
+            "2023": 16425.0,
+            "label": "General and Administrative Expense, Total",
+            "line": 184,
+            "indentation": "150px"
+        },
+        {
+            "2022": 207994.0,
+            "2023": 223101.0,
+            "label": "Costs and Expenses, Total",
+            "line": 207,
+            "indentation": "120px"
+        },
+        {
+            "2022": 74842.0,
+            "2023": 84293.0,
+            "label": "Operating Income (Loss), Total",
+            "line": 209,
+            "indentation": "110px"
+        },
+        {
+            "2022": 1960.0,
+            "2023": 236.0,
+            "label": "Gain (Loss) on Hedging Activity",
+            "line": 223,
+            "indentation": "140px"
+        },
+        {
+            "2022": 0.0,
+            "2023": 0.0,
+            "label": "Derivative Instruments Not Designated as Hedging Instruments, Gain (Loss), Net",
+            "line": 225,
+            "indentation": "140px"
+        },
+        {
+            "2022": 654.0,
+            "2023": 1238.0,
+            "label": "Gain (Loss), Foreign Currency Transaction, before Tax, Total",
+            "line": 249,
+            "indentation": "110px"
+        },
+        {
+            "2022": 381.0,
+            "2023": 299.0,
+            "label": "Other Nonoperating Income (Expense), Total",
+            "line": 254,
+            "indentation": "120px"
+        },
+        {
+            "2022": 3514.0,
+            "2023": 1424.0,
+            "label": "Nonoperating Income (Expense), Total",
+            "line": 255,
+            "indentation": "110px"
+        },
+        {
+            "2022": 71328.0,
+            "2023": 85717.0,
+            "label": "Income (Loss) from Continuing Operations before Income Taxes, Noncontrolling Interest, Total",
+            "line": 279,
+            "indentation": "90px"
+        },
+        {
+            "2022": 11356.0,
+            "2023": 11922.0,
+            "label": "Income Tax Expense (Benefit)",
+            "line": 280,
+            "indentation": "80px"
+        },
+        {
+            "2022": 59972.0,
+            "2023": 73795.0,
+            "label": "Net Income (Loss) Attributable to Parent, Total",
+            "line": 320,
+            "indentation": "60px"
+        },
+        {
+            "2022": 27518.0,
+            "2023": 34601.0,
+            "label": "Net Income (Loss) Available to Common Stockholders, Basic, Total",
+            "line": 336,
+            "indentation": "50px"
+        },
+        {
+            "2022": 4.59,
+            "2023": 5.84,
+            "label": "Earnings Per Share, Basic, Total",
+            "line": 353,
+            "indentation": "60px"
+        },
+        {
+            "2022": 5994.0,
+            "2023": 5922.0,
+            "label": "Weighted Average Number of Shares Outstanding, Basic",
+            "line": 356,
+            "indentation": "60px"
+        },
+        {
+            "2022": 4.56,
+            "2023": 5.8,
+            "label": "Earnings Per Share, Diluted, Total",
+            "line": 363,
+            "indentation": "60px"
+        },
+        {
+            "2022": 6881.0,
+            "2023": 6799.0,
+            "label": "Weighted Average Number of Shares Outstanding, Diluted",
+            "line": 366,
+            "indentation": "60px"
+        },
+        {
+            "2022": 6881.0,
+            "2023": 6799.0,
+            "label": "Weighted Average Number of Shares Outstanding, Diluted",
+            "line": 377,
+            "indentation": "60px"
+        },
+        {
+            "2022": 126203.0,
+            "2023": 133332.0,
+            "label": "Cost of Revenue, Total",
+            "line": 440,
+            "indentation": "120px"
+        },
+        {
+            "2022": 39500.0,
+            "2023": 45427.0,
+            "label": "Research and Development Expense, Total",
+            "line": 448,
+            "indentation": "140px"
+        },
+        {
+            "2022": null,
+            "2023": 2.1,
+            "label": "Restructuring Charges, Total",
+            "line": 477,
+            "indentation": "150px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Goodwill, Impairment Loss",
+            "line": 487,
+            "indentation": "150px"
+        },
+        {
+            "2022": 9.2,
+            "2023": 8.7,
+            "label": "Marketing and Advertising Expense, Total",
+            "line": 530,
+            "indentation": "150px"
+        },
+        {
+            "2022": 26567.0,
+            "2023": 27917.0,
+            "label": "Selling and Marketing Expense, Total",
+            "line": 537,
+            "indentation": "140px"
+        },
+        {
+            "2022": 15724.0,
+            "2023": 16425.0,
+            "label": "General and Administrative Expense, Total",
+            "line": 554,
+            "indentation": "140px"
+        },
+        {
+            "2022": 207994.0,
+            "2023": 223101.0,
+            "label": "Costs and Expenses, Total",
+            "line": 577,
+            "indentation": "110px"
+        },
+        {
+            "2022": 74842.0,
+            "2023": 84293.0,
+            "label": "Operating Income (Loss), Total",
+            "line": 579,
+            "indentation": "100px"
+        },
+        {
+            "2022": 1960.0,
+            "2023": 236.0,
+            "label": "Gain (Loss) on Hedging Activity",
+            "line": 593,
+            "indentation": "130px"
+        },
+        {
+            "2022": 0.0,
+            "2023": 0.0,
+            "label": "Derivative Instruments Not Designated as Hedging Instruments, Gain (Loss), Net",
+            "line": 595,
+            "indentation": "130px"
+        },
+        {
+            "2022": 654.0,
+            "2023": 1238.0,
+            "label": "Gain (Loss), Foreign Currency Transaction, before Tax, Total",
+            "line": 619,
+            "indentation": "100px"
+        },
+        {
+            "2022": 381.0,
+            "2023": 299.0,
+            "label": "Other Nonoperating Income (Expense), Total",
+            "line": 624,
+            "indentation": "110px"
+        },
+        {
+            "2022": 3514.0,
+            "2023": 1424.0,
+            "label": "Nonoperating Income (Expense), Total",
+            "line": 625,
+            "indentation": "100px"
+        },
+        {
+            "2022": 71328.0,
+            "2023": 85717.0,
+            "label": "Income (Loss) from Continuing Operations before Income Taxes, Noncontrolling Interest, Total",
+            "line": 649,
+            "indentation": "80px"
+        }
+    ],
+    "cash_flow": [
+        {
+            "2022": 126203.0,
+            "2023": 133332.0,
+            "label": "Cost of Revenue, Total",
+            "line": 70,
+            "indentation": "130px"
+        },
+        {
+            "2022": 39500.0,
+            "2023": 45427.0,
+            "label": "Research and Development Expense, Total",
+            "line": 78,
+            "indentation": "150px"
+        },
+        {
+            "2022": null,
+            "2023": 2.1,
+            "label": "Restructuring Charges, Total",
+            "line": 107,
+            "indentation": "160px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Goodwill, Impairment Loss",
+            "line": 117,
+            "indentation": "160px"
+        },
+        {
+            "2022": 9.2,
+            "2023": 8.7,
+            "label": "Marketing and Advertising Expense, Total",
+            "line": 160,
+            "indentation": "160px"
+        },
+        {
+            "2022": 26567.0,
+            "2023": 27917.0,
+            "label": "Selling and Marketing Expense, Total",
+            "line": 167,
+            "indentation": "150px"
+        },
+        {
+            "2022": 15724.0,
+            "2023": 16425.0,
+            "label": "General and Administrative Expense, Total",
+            "line": 184,
+            "indentation": "150px"
+        },
+        {
+            "2022": 207994.0,
+            "2023": 223101.0,
+            "label": "Costs and Expenses, Total",
+            "line": 207,
+            "indentation": "120px"
+        },
+        {
+            "2022": 74842.0,
+            "2023": 84293.0,
+            "label": "Operating Income (Loss), Total",
+            "line": 209,
+            "indentation": "110px"
+        },
+        {
+            "2022": 1960.0,
+            "2023": 236.0,
+            "label": "Gain (Loss) on Hedging Activity",
+            "line": 223,
+            "indentation": "140px"
+        },
+        {
+            "2022": 0.0,
+            "2023": 0.0,
+            "label": "Derivative Instruments Not Designated as Hedging Instruments, Gain (Loss), Net",
+            "line": 225,
+            "indentation": "140px"
+        },
+        {
+            "2022": 654.0,
+            "2023": 1238.0,
+            "label": "Gain (Loss), Foreign Currency Transaction, before Tax, Total",
+            "line": 249,
+            "indentation": "110px"
+        },
+        {
+            "2022": 381.0,
+            "2023": 299.0,
+            "label": "Other Nonoperating Income (Expense), Total",
+            "line": 254,
+            "indentation": "120px"
+        },
+        {
+            "2022": 3514.0,
+            "2023": 1424.0,
+            "label": "Nonoperating Income (Expense), Total",
+            "line": 255,
+            "indentation": "110px"
+        },
+        {
+            "2022": 71328.0,
+            "2023": 85717.0,
+            "label": "Income (Loss) from Continuing Operations before Income Taxes, Noncontrolling Interest, Total",
+            "line": 279,
+            "indentation": "90px"
+        },
+        {
+            "2022": 11356.0,
+            "2023": 11922.0,
+            "label": "Income Tax Expense (Benefit)",
+            "line": 280,
+            "indentation": "80px"
+        },
+        {
+            "2022": 59972.0,
+            "2023": 73795.0,
+            "label": "Net Income (Loss) Attributable to Parent, Total",
+            "line": 320,
+            "indentation": "60px"
+        },
+        {
+            "2022": 27518.0,
+            "2023": 34601.0,
+            "label": "Net Income (Loss) Available to Common Stockholders, Basic, Total",
+            "line": 336,
+            "indentation": "50px"
+        },
+        {
+            "2022": 4.59,
+            "2023": 5.84,
+            "label": "Earnings Per Share, Basic, Total",
+            "line": 353,
+            "indentation": "60px"
+        },
+        {
+            "2022": 5994.0,
+            "2023": 5922.0,
+            "label": "Weighted Average Number of Shares Outstanding, Basic",
+            "line": 356,
+            "indentation": "60px"
+        },
+        {
+            "2022": 4.56,
+            "2023": 5.8,
+            "label": "Earnings Per Share, Diluted, Total",
+            "line": 363,
+            "indentation": "60px"
+        },
+        {
+            "2022": 6881.0,
+            "2023": 6799.0,
+            "label": "Weighted Average Number of Shares Outstanding, Diluted",
+            "line": 366,
+            "indentation": "60px"
+        },
+        {
+            "2022": 6881.0,
+            "2023": 6799.0,
+            "label": "Weighted Average Number of Shares Outstanding, Diluted",
+            "line": 377,
+            "indentation": "60px"
+        },
+        {
+            "2022": 126203.0,
+            "2023": 133332.0,
+            "label": "Cost of Revenue, Total",
+            "line": 440,
+            "indentation": "120px"
+        },
+        {
+            "2022": 39500.0,
+            "2023": 45427.0,
+            "label": "Research and Development Expense, Total",
+            "line": 448,
+            "indentation": "140px"
+        },
+        {
+            "2022": null,
+            "2023": 2.1,
+            "label": "Restructuring Charges, Total",
+            "line": 477,
+            "indentation": "150px"
+        },
+        {
+            "2022": null,
+            "2023": null,
+            "label": "Goodwill, Impairment Loss",
+            "line": 487,
+            "indentation": "150px"
+        },
+        {
+            "2022": 9.2,
+            "2023": 8.7,
+            "label": "Marketing and Advertising Expense, Total",
+            "line": 530,
+            "indentation": "150px"
+        },
+        {
+            "2022": 26567.0,
+            "2023": 27917.0,
+            "label": "Selling and Marketing Expense, Total",
+            "line": 537,
+            "indentation": "140px"
+        },
+        {
+            "2022": 15724.0,
+            "2023": 16425.0,
+            "label": "General and Administrative Expense, Total",
+            "line": 554,
+            "indentation": "140px"
+        },
+        {
+            "2022": 207994.0,
+            "2023": 223101.0,
+            "label": "Costs and Expenses, Total",
+            "line": 577,
+            "indentation": "110px"
+        },
+        {
+            "2022": 74842.0,
+            "2023": 84293.0,
+            "label": "Operating Income (Loss), Total",
+            "line": 579,
+            "indentation": "100px"
+        },
+        {
+            "2022": 1960.0,
+            "2023": 236.0,
+            "label": "Gain (Loss) on Hedging Activity",
+            "line": 593,
+            "indentation": "130px"
+        },
+        {
+            "2022": 0.0,
+            "2023": 0.0,
+            "label": "Derivative Instruments Not Designated as Hedging Instruments, Gain (Loss), Net",
+            "line": 595,
+            "indentation": "130px"
+        },
+        {
+            "2022": 654.0,
+            "2023": 1238.0,
+            "label": "Gain (Loss), Foreign Currency Transaction, before Tax, Total",
+            "line": 619,
+            "indentation": "100px"
+        },
+        {
+            "2022": 381.0,
+            "2023": 299.0,
+            "label": "Other Nonoperating Income (Expense), Total",
+            "line": 624,
+            "indentation": "110px"
+        },
+        {
+            "2022": 3514.0,
+            "2023": 1424.0,
+            "label": "Nonoperating Income (Expense), Total",
+            "line": 625,
+            "indentation": "100px"
+        },
+        {
+            "2022": 71328.0,
+            "2023": 85717.0,
+            "label": "Income (Loss) from Continuing Operations before Income Taxes, Noncontrolling Interest, Total",
+            "line": 649,
+            "indentation": "80px"
+        }
+    ]
+}
