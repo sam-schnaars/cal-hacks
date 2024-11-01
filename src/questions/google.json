@@ -1,0 +1,143 @@
+[
+    {
+        "id": 1,
+        "text": "What was Alphabet's total revenue for the year ended December 31, 2023?",
+        "options": [
+            {
+                "id": 1,
+                "text": "$282,836 million"
+            },
+            {
+                "id": 2,
+                "text": "$283,474 million"
+            },
+            {
+                "id": 3,
+                "text": "$307,394 million"
+            },
+            {
+                "id": 4,
+                "text": "$283,836 million"
+            }
+        ],
+        "highlight": [
+            {
+                "statement": "income statement",
+                "field": "Revenues"
+            }
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 2,
+        "text": "True or False: Alphabet's cost of revenues increased from 2022 to 2023.",
+        "options": [
+            {
+                "id": 1,
+                "text": "True"
+            },
+            {
+                "id": 2,
+                "text": "False"
+            }
+        ],
+        "highlight": [
+            {
+                "statement": "income statement",
+                "field": "Cost of revenues"
+            }
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 3,
+        "text": "What was the amount of Alphabet's net income in 2022?",
+        "options": [
+            {
+                "id": 1,
+                "text": "$59,972 million"
+            },
+            {
+                "id": 2,
+                "text": "$73,795 million"
+            },
+            {
+                "id": 3,
+                "text": "$84,293 million"
+            },
+            {
+                "id": 4,
+                "text": "$11,922 million"
+            }
+        ],
+        "highlight": [
+            {
+                "statement": "income statement",
+                "field": "Net income"
+            }
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 4,
+        "text": "Calculate Alphabet's gross profit margin for 2023.",
+        "options": [
+            {
+                "id": 1,
+                "text": "51.30%"
+            },
+            {
+                "id": 2,
+                "text": "43.33%"
+            },
+            {
+                "id": 3,
+                "text": "56.67%"
+            },
+            {
+                "id": 4,
+                "text": "61.20%"
+            }
+        ],
+        "highlight": [
+            {
+                "statement": "income statement",
+                "field": "Revenues"
+            },
+            {
+                "statement": "income statement",
+                "field": "Cost of revenues"
+            }
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 5,
+        "text": "Which line item contributed the most to Alphabet's increase in total costs and expenses from 2022 to 2023?",
+        "options": [
+            {
+                "id": 1,
+                "text": "Cost of revenues"
+            },
+            {
+                "id": 2,
+                "text": "Research and development"
+            },
+            {
+                "id": 3,
+                "text": "Sales and marketing"
+            },
+            {
+                "id": 4,
+                "text": "General and administrative"
+            }
+        ],
+        "highlight": [
+            {
+                "statement": "income statement",
+                "field": "Cost of revenues"
+            }
+        ],
+        "correctAnswer": 1
+    }
+]

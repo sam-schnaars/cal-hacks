@@ -1,0 +1,503 @@
+{
+    "bs": {
+        "headers": [
+            "2022",
+            "2023"
+        ],
+        "rows": [
+            {
+                "title": "Assets"
+            },
+            {
+                "title": "Current assets:"
+            },
+            {
+                "title": "Cash and cash equivalents",
+                "2022": "21,879",
+                "2023": "24,048"
+            },
+            {
+                "title": "Marketable securities",
+                "2022": "91,883",
+                "2023": "86,868"
+            },
+            {
+                "title": "Total cash, cash equivalents, and marketable securities",
+                "2022": "113,762",
+                "2023": "110,916"
+            },
+            {
+                "title": "Accounts receivable, net",
+                "2022": "40,258",
+                "2023": "47,964"
+            },
+            {
+                "title": "Other current assets",
+                "2022": "10,775",
+                "2023": "12,650"
+            },
+            {
+                "title": "Total current assets",
+                "2022": "164,795",
+                "2023": "171,530"
+            },
+            {
+                "title": "Non-marketable securities",
+                "2022": "30,492",
+                "2023": "31,008"
+            },
+            {
+                "title": "Deferred income taxes",
+                "2022": "5,261",
+                "2023": "12,169"
+            },
+            {
+                "title": "Property and equipment, net",
+                "2022": "112,668",
+                "2023": "134,345"
+            },
+            {
+                "title": "Operating lease assets",
+                "2022": "14,381",
+                "2023": "14,091"
+            },
+            {
+                "title": "Goodwill",
+                "2022": "28,960",
+                "2023": "29,198"
+            },
+            {
+                "title": "Other non-current assets",
+                "2022": "8,707",
+                "2023": "10,051"
+            },
+            {
+                "title": "Total assets",
+                "2022": "365,264",
+                "2023": "402,392"
+            },
+            {
+                "title": "Liabilities and Stockholders\u2019 Equity"
+            },
+            {
+                "title": "Current liabilities:"
+            },
+            {
+                "title": "Accounts payable",
+                "2022": "5,128",
+                "2023": "7,493"
+            },
+            {
+                "title": "Accrued compensation and benefits",
+                "2022": "14,028",
+                "2023": "15,140"
+            },
+            {
+                "title": "Accrued expenses and other current liabilities",
+                "2022": "37,866",
+                "2023": "46,168"
+            },
+            {
+                "title": "Accrued revenue share",
+                "2022": "8,370",
+                "2023": "8,876"
+            },
+            {
+                "title": "Deferred revenue",
+                "2022": "3,908",
+                "2023": "4,137"
+            },
+            {
+                "title": "Total current liabilities",
+                "2022": "69,300",
+                "2023": "81,814"
+            },
+            {
+                "title": "Long-term debt",
+                "2022": "14,701",
+                "2023": "13,253"
+            },
+            {
+                "title": "Deferred revenue, non-current",
+                "2022": "599",
+                "2023": "911"
+            },
+            {
+                "title": "Income taxes payable, non-current",
+                "2022": "9,258",
+                "2023": "8,474"
+            },
+            {
+                "title": "Deferred income taxes",
+                "2022": "514",
+                "2023": "485"
+            },
+            {
+                "title": "Operating lease liabilities",
+                "2022": "12,501",
+                "2023": "12,460"
+            },
+            {
+                "title": "Other long-term liabilities",
+                "2022": "2,247",
+                "2023": "1,616"
+            },
+            {
+                "title": "Total liabilities",
+                "2022": "109,120",
+                "2023": "119,013"
+            },
+            {
+                "title": "Commitments and Contingencies (Note 10)"
+            },
+            {
+                "title": "Stockholders\u2019 equity:"
+            },
+            {
+                "title": "Preferred stock, $0.001par value per share,100shares authorized;noshares issued and outstanding",
+                "2022": "0",
+                "2023": "0"
+            },
+            {
+                "title": "Class\u00a0A, Class B, and Class C stock and additional paid-in capital, $0.001par value per share:300,000shares authorized (Class A180,000, Class B60,000, Class C60,000);12,849(Class\u00a0A5,964, Class B883, Class C6,002) and12,460(Class\u00a0A5,899, Class B870, Class C5,691) shares issued and outstanding",
+                "2022": "68,184",
+                "2023": "76,534"
+            },
+            {
+                "title": "Accumulated other comprehensive income (loss)",
+                "2022": "(7,603)",
+                "2023": "(4,402)"
+            },
+            {
+                "title": "Retained earnings",
+                "2022": "195,563",
+                "2023": "211,247"
+            },
+            {
+                "title": "Total stockholders\u2019 equity",
+                "2022": "256,144",
+                "2023": "283,379"
+            },
+            {
+                "title": "Total liabilities and stockholders\u2019 equity",
+                "2022": "365,264",
+                "2023": "402,392"
+            }
+        ]
+    },
+    "cf": {
+        "headers": [
+            "2021",
+            "2022",
+            "2023"
+        ],
+        "rows": [
+            {
+                "title": "Operating activities"
+            },
+            {
+                "title": "Net income",
+                "2021": "76,033",
+                "2022": "59,972",
+                "2023": "73,795"
+            },
+            {
+                "title": "Adjustments:"
+            },
+            {
+                "title": "Depreciation of property and equipment",
+                "2021": "10,273",
+                "2022": "13,475",
+                "2023": "11,946"
+            },
+            {
+                "title": "Stock-based compensation expense",
+                "2021": "15,376",
+                "2022": "19,362",
+                "2023": "22,460"
+            },
+            {
+                "title": "Deferred income taxes",
+                "2021": "1,808",
+                "2022": "(8,081)",
+                "2023": "(7,763)"
+            },
+            {
+                "title": "(Gain) loss on debt and equity securities, net",
+                "2021": "(12,270)",
+                "2022": "5,519",
+                "2023": "823"
+            },
+            {
+                "title": "Other",
+                "2021": "1,955",
+                "2022": "3,483",
+                "2023": "4,330"
+            },
+            {
+                "title": "Changes in assets and liabilities, net of effects of acquisitions:"
+            },
+            {
+                "title": "Accounts receivable, net",
+                "2021": "(9,095)",
+                "2022": "(2,317)",
+                "2023": "(7,833)"
+            },
+            {
+                "title": "Income taxes, net",
+                "2021": "(625)",
+                "2022": "584",
+                "2023": "523"
+            },
+            {
+                "title": "Other assets",
+                "2021": "(1,846)",
+                "2022": "(5,046)",
+                "2023": "(2,143)"
+            },
+            {
+                "title": "Accounts payable",
+                "2021": "283",
+                "2022": "707",
+                "2023": "664"
+            },
+            {
+                "title": "Accrued expenses and other liabilities",
+                "2021": "7,304",
+                "2022": "3,915",
+                "2023": "3,937"
+            },
+            {
+                "title": "Accrued revenue share",
+                "2021": "1,682",
+                "2022": "(445)",
+                "2023": "482"
+            },
+            {
+                "title": "Deferred revenue",
+                "2021": "774",
+                "2022": "367",
+                "2023": "525"
+            },
+            {
+                "title": "Net cash provided by operating activities",
+                "2021": "91,652",
+                "2022": "91,495",
+                "2023": "101,746"
+            },
+            {
+                "title": "Investing activities"
+            },
+            {
+                "title": "Purchases of property and equipment",
+                "2021": "(24,640)",
+                "2022": "(31,485)",
+                "2023": "(32,251)"
+            },
+            {
+                "title": "Purchases of marketable securities",
+                "2021": "(135,196)",
+                "2022": "(78,874)",
+                "2023": "(77,858)"
+            },
+            {
+                "title": "Maturities and sales of marketable securities",
+                "2021": "128,294",
+                "2022": "97,822",
+                "2023": "86,672"
+            },
+            {
+                "title": "Purchases of non-marketable securities",
+                "2021": "(2,838)",
+                "2022": "(2,531)",
+                "2023": "(3,027)"
+            },
+            {
+                "title": "Maturities and sales of non-marketable securities",
+                "2021": "934",
+                "2022": "150",
+                "2023": "947"
+            },
+            {
+                "title": "Acquisitions, net of cash acquired, and purchases of intangible assets",
+                "2021": "(2,618)",
+                "2022": "(6,969)",
+                "2023": "(495)"
+            },
+            {
+                "title": "Other investing activities",
+                "2021": "541",
+                "2022": "1,589",
+                "2023": "(1,051)"
+            },
+            {
+                "title": "Net cash used in investing activities",
+                "2021": "(35,523)",
+                "2022": "(20,298)",
+                "2023": "(27,063)"
+            },
+            {
+                "title": "Financing activities"
+            },
+            {
+                "title": "Net payments related to stock-based award activities",
+                "2021": "(10,162)",
+                "2022": "(9,300)",
+                "2023": "(9,837)"
+            },
+            {
+                "title": "Repurchases of stock",
+                "2021": "(50,274)",
+                "2022": "(59,296)",
+                "2023": "(61,504)"
+            },
+            {
+                "title": "Proceeds from issuance of debt, net of costs",
+                "2021": "20,199",
+                "2022": "52,872",
+                "2023": "10,790"
+            },
+            {
+                "title": "Repayments of debt",
+                "2021": "(21,435)",
+                "2022": "(54,068)",
+                "2023": "(11,550)"
+            },
+            {
+                "title": "Proceeds from sale of interest in consolidated entities, net",
+                "2021": "310",
+                "2022": "35",
+                "2023": "8"
+            },
+            {
+                "title": "Net cash used in financing activities",
+                "2021": "(61,362)",
+                "2022": "(69,757)",
+                "2023": "(72,093)"
+            },
+            {
+                "title": "Effect of exchange rate changes on cash and cash equivalents",
+                "2021": "(287)",
+                "2022": "(506)",
+                "2023": "(421)"
+            },
+            {
+                "title": "Net increase (decrease) in cash and cash equivalents",
+                "2021": "(5,520)",
+                "2022": "934",
+                "2023": "2,169"
+            },
+            {
+                "title": "Cash and cash equivalents at beginning of period",
+                "2021": "26,465",
+                "2022": "20,945",
+                "2023": "21,879"
+            },
+            {
+                "title": "Cash and cash equivalents at end of period",
+                "2021": "20,945",
+                "2022": "21,879",
+                "2023": "24,048"
+            },
+            {
+                "title": "Supplemental disclosures of cash flow information"
+            },
+            {
+                "title": "Cash paid for income taxes, net of refunds",
+                "2021": "13,412",
+                "2022": "18,892",
+                "2023": "19,164"
+            }
+        ]
+    },
+    "is": {
+        "headers": [
+            "2021",
+            "2022",
+            "2023"
+        ],
+        "rows": [
+            {
+                "title": "Revenues",
+                "2021": "257,637",
+                "2022": "282,836",
+                "2023": "307,394"
+            },
+            {
+                "title": "Costs and expenses:"
+            },
+            {
+                "title": "Cost of revenues",
+                "2021": "110,939",
+                "2022": "126,203",
+                "2023": "133,332"
+            },
+            {
+                "title": "Research and development",
+                "2021": "31,562",
+                "2022": "39,500",
+                "2023": "45,427"
+            },
+            {
+                "title": "Sales and marketing",
+                "2021": "22,912",
+                "2022": "26,567",
+                "2023": "27,917"
+            },
+            {
+                "title": "General and administrative",
+                "2021": "13,510",
+                "2022": "15,724",
+                "2023": "16,425"
+            },
+            {
+                "title": "Total costs and expenses",
+                "2021": "178,923",
+                "2022": "207,994",
+                "2023": "223,101"
+            },
+            {
+                "title": "Income from operations",
+                "2021": "78,714",
+                "2022": "74,842",
+                "2023": "84,293"
+            },
+            {
+                "title": "Other income (expense), net",
+                "2021": "12,020",
+                "2022": "(3,514)",
+                "2023": "1,424"
+            },
+            {
+                "title": "Income before income taxes",
+                "2021": "90,734",
+                "2022": "71,328",
+                "2023": "85,717"
+            },
+            {
+                "title": "Provision for income taxes",
+                "2021": "14,701",
+                "2022": "11,356",
+                "2023": "11,922"
+            },
+            {
+                "title": "Net income",
+                "2021": "76,033",
+                "2022": "59,972",
+                "2023": "73,795"
+            },
+            {
+                "title": "Basic net income per share of Class A, Class B, and Class C stock",
+                "2021": "5.69",
+                "2022": "4.59",
+                "2023": "5.84"
+            },
+            {
+                "title": "Diluted net income per share of Class A, Class B, and Class C stock",
+                "2021": "5.61",
+                "2022": "4.56",
+                "2023": "5.80"
+            }
+        ]
+    }
+}

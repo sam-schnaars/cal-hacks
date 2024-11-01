@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import companiesData from './companies_mapping.json'; // Update the path accordingly
-import PracticeScreen from './Practice';
 
 export default function Home() {
   // Create an array of companies from the JSON data
